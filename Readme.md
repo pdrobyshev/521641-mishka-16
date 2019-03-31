@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Пётр Дробышев](https://up.htmlacademy.ru/adaptive/16/user/521641).
-* Наставник: `Неизвестно`.
+* Наставник: `Николай Громов`.
 
 ---
 

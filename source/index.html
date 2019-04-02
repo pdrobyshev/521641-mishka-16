@@ -5,8 +5,151 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
+    <header class="page-header">
+      <div class="logo page-header__logo">
+        <img src="http://placehold.it/86x35" alt="Логотип магазина вязаных игрушек Mishka" width="86" height="35">
+      </div>
+      <nav class="main-nav">
+        <button class="main-nav__toggle">Открыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li>
+            <a class="site-list__link" href="#">Каталог товаров</a>
+          </li>
+          <li>
+            <a class="site-list__link" href="#">Вязание на заказ</a>
+          </li>
+          <li>
+            <a class="site-list__link" href="#">Поиск по сайту</a>
+          </li>
+          <li>
+            <a class="site-list__link" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="products">
+        <h2 class="products__title">Милые штуки ручной работы для дома</h2>
+        <ul class="products__list">
+          <li class="products__item">
+            <a class="products__link" href="#">Предметы интерьера</a>
+          </li>
+          <li class="products__item">
+            <a class="products__link" href="#">Детские игрушки</a>
+          </li>
+        </ul>
+      </section>
+      <section class="top-product">
+        <h2 class="top-product__title">Вязаные корзинки</h2>
+        <span class="top-product__tag">Товар недели</span>
+        <p class="top-product__info">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трёх размерах.</p>
+        <table class="top-product__features-list">
+          <tr>
+            <td class="top-product__feature">Цвет:</td>
+            <td class="top-product__feature">«Тиффани»/серый</td>
+          </tr>
+          <tr>
+            <td class="top-product__feature">Диаметр:</td>
+            <td class="top-product__feature">25 см</td>
+          </tr>
+          <tr>
+            <td class="top-product__feature">Высота:</td>
+            <td class="top-product__feature">15 см</td>
+          </tr>
+        </table>
+        <img src="http://placehold.it/260x315" alt="Фотография товара недели - вязаных корзинок" width="260" height="315">
+        <span class="top-product__price">Цена: 990 руб.</span>
+        <a class="top-product__button button" href="#">Заказать</a>
+      </section>
+      <section class="about-us">
+        <h2 class="about-us__title">Коротко о нас:</h2>
+        <ul class="about-us__list">
+          <li class="about-us__item">Экологически чистые материалы</li>
+          <li class="about-us__item">Скандинавский стиль по российской цене</li>
+          <li class="about-us__item">Увеличивает лайки на фотографиях</li>
+          <li class="about-us__item">Связано вручную с любовью и умилением</li>
+          <li class="about-us__item">Поддержка отечественного производителя</li>
+          <li class="about-us__item">Поставляется в подарочной упаковке</li>
+        </ul>
+      </section>
+      <section class="review slider">
+        <h2 class="review__title">Отзывы</h2>
+        <ul class="review__list slider__list">
+          <li class="review__item slider__item">
+            <p class="review__text">
+              Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+            </p>
+            <p class="review__author">Анастасия красильникова</p>
+            <span class="review__author-login">@misssssiskras</span>
+          </li>
+        </ul>
+        <div class="review__toggles slider__toggles">
+          <button class="review__button review__button--prev" type="button">Назад</button>
+          <button class="review__button review__button--next" type="button">Вперёд</button>
+        </div>
+        <button class="button">Написать</button>
+      </section>
+      <section class="contacts">
+        <h2 class="contacts__title">Контакты</h2>
+        <p class="contacts__text">
+          <span class="contacts__left">e-mail</span>
+          <span class="contacts__right contacts__right--email">info@mimimishkashop.ru</span>
+        </p>
+        <p class="contacts__text">
+          <span class="contacts__left">адрес:</span>
+          <span class="contacts__right">
+            г. Санкт-Петербург,<br>
+            ул. Большая Конюшенная,<br>
+            д. 19/8, офис 101
+          </span>
+        </p>
+        <div class="contacts__iframe iframe-map">
+          <img class="iframe-map__static" src="http://placehold.it/320x457" alt="Адрес офиса на карте - г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101" width="320" height="457">
+        </div>
+        <button class="contacts__button button">Напишите нам</button>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <section class="social page-footer__social">
+        <h2 class="visually-hidden">Наши социальные сети</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__item" href="#">
+              Инстаграм
+              <img src="http://placehold.it/21x22" alt="Логотип инстаграма" width="21" height="22">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__item" href="#">
+              Фейсбук
+              <img src="http://placehold.it/15x28" alt="Логотип фейсбука" width="15" height="28">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__item" href="#">
+              Твиттер
+              <img src="http://placehold.it/23x20" alt="Логотип твиттера" width="23" height="20">
+            </a>
+          </li>
+        </ul>
+        <div class="social__developed">
+          <span class="social__developed">Разработано</span>
+          <a class="social__htmlacademy" href="#">
+            <img src="http://placehold.it/320x457" alt="Логотип HTML Academy" width="27" height="34">
+          </a>
+        </div>
+      </section>
+    </footer>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+    <div class="modal modal-basket">
+      <p class="modal-basket__title">Добавить в корзину</p>
+      <span class="modal-basket__size">Выберите размер:</span>
+      <div class="modal-basket__list">
+        <button class="modal-basket__button button" type="button">S</button>
+        <button class="modal-basket__button button" type="button">M</button>
+        <button class="modal-basket__button button" type="button">L</button>
+      </div>
+      <button class="modal-basket__add button" type="button">Добавить</button>
+    </div>
   </body>
 </html>

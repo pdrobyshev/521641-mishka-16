@@ -107,8 +107,8 @@
             д. 19/8, офис 101
           </span>
         </p>
-        <div class="contacts__map  iframe-map">
-          <img class="iframe-map__static" src="http://placehold.it/320x457" alt="Адрес офиса на карте - г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101" width="320" height="457">
+        <div class="contacts__map  map">
+          <img class="map__static" src="http://placehold.it/320x457" alt="Адрес офиса на карте - г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101" width="320" height="457">
         </div>
         <button class="contacts__button  button">Напишите нам</button>
       </section>
@@ -136,9 +136,9 @@
             </a>
           </li>
         </ul>
-        <div class="social__developed">
-          <span class="social__developed-by">Разработано</span>
-          <a class="social__htmlacademy" href="#">
+        <div class="copyright">
+          <span class="copyright__text">Разработано</span>
+          <a class="copyright__htmlacademy" href="#">
             <img src="http://placehold.it/320x457" alt="Логотип HTML Academy" width="27" height="34">
           </a>
         </div>
@@ -146,17 +146,25 @@
     </footer>
 
     <section class="modal  modal-basket">
-      <h2 class="modal-basket__title">Добавить в корзину</h2>
-      <span class="modal-basket__size">Выберите размер:</span>
-      <div class="modal-basket__list">
-        <label class="modal-basket__label" for="product-size-s">S</label>
-        <input class="modal-basket__input" type="radio" name="product-size" id="product-size-s">
-        <label class="modal-basket__label" for="product-size-m">M</label>
-        <input class="modal-basket__input" type="radio" name="product-size" id="product-size-m">
-        <label class="modal-basket__label" for="product-size-l">L</label>
-        <input class="modal-basket__input" type="radio" name="product-size" id="product-size-l">
-      </div>
-      <button class="modal-basket__add button">Добавить</button>
+      <form class="modal-basket__form" action="https://echo.htmlacademy.ru">
+        <h2 class="modal-basket__title">Добавить в корзину</h2>
+        <span class="modal-basket__size">Выберите размер:</span>
+        <div class="modal-basket__list">
+          <label class="modal-basket__label">
+            <span class="modal-basket__label-active">S</span>
+            <input class="modal-basket__input" type="radio" name="product-size">
+          </label>
+          <label class="modal-basket__label">
+            <span>M</span>
+            <input class="modal-basket__input" type="radio" name="product-size">
+          </label>
+          <label class="modal-basket__label">
+            <span>L</span>
+            <input class="modal-basket__input" type="radio" name="product-size">
+          </label>
+        </div>
+        <button class="modal-basket__add  button">Добавить</button>
+      </form>
     </section>
   </body>
 </html>

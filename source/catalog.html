@@ -29,36 +29,35 @@
     </header>
     <main class="page-main">
       <h1 class="page-main__title">Каталог товаров</h1>
-      <div class="goods  page-main__goods">
-        <article class="goods__item">
-          <a class="goods__item-link" href="#">
-            <img class="goods__item-img" src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик" width="260" height="195">
-            <h2 class="goods__name">Зайчик-попрыгайчик</h2>
-            <span class="goods__stats">Рост 30 см, вес 200 г</span>
-            <span class="goods__price">1 200 руб.</span>
+      <div class="cards  page-main__cards">
+        <article class="card">
+          <a class="card__item-link" href="#">
+            <img class="card__item-img" src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик" width="260" height="195">
+            <h2 class="card__name">Зайчик-попрыгайчик</h2>
+            <span class="card__stats">Рост 30 см, вес 200 г</span>
+            <span class="card__price">1 200 руб.</span>
           </a>
         </article>
-        <article class="goods__item">
-          <a class="goods__item-link" href="#">
-            <img class="goods__item-img" src="http://placehold.it/260x195" alt="Корзинка для белья" width="260" height="195">
-            <h2 class="goods__name">Корзинка для белья</h2>
-            <span class="goods__stats">Диаметр 15 см, высота 10 см</span>
-            <span class="goods__price">690 руб.</span>
+        <article class="card">
+          <a class="card__item-link" href="#">
+            <img class="card__item-img" src="http://placehold.it/260x195" alt="Корзинка для белья" width="260" height="195">
+            <h2 class="card__name">Корзинка для белья</h2>
+            <span class="card__stats">Диаметр 15 см, высота 10 см</span>
+            <span class="card__price">690 руб.</span>
           </a>
         </article>
-        <article class="goods__item">
-          <a class="goods__item-link" href="#">
-            <img class="goods__item-img" src="http://placehold.it/260x195" alt="Большая корзинка для игрушек" width="260" height="195">
-            <h2 class="goods__name">Большая корзинка для игрушек</h2>
-            <span class="goods__stats">Диаметр 30 см, высота 30 см</span>
-            <span class="goods__price">1 500 руб.</span>
+        <article class="card">
+          <a class="card__item-link" href="#">
+            <img class="card__item-img" src="http://placehold.it/260x195" alt="Большая корзинка для игрушек" width="260" height="195">
+            <h2 class="card__name">Большая корзинка для игрушек</h2>
+            <span class="card__stats">Диаметр 30 см, высота 30 см</span>
+            <span class="card__price">1 500 руб.</span>
           </a>
         </article>
       </div>
     </main>
     <footer class="page-footer">
-      <section class="social  page-footer__social">
-        <h2 class="visually-hidden">Наши социальные сети</h2>
+      <div class="social  page-footer__social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__item" href="#">
@@ -85,7 +84,7 @@
             <img src="http://placehold.it/320x457" alt="Логотип HTML Academy" width="27" height="34">
           </a>
         </div>
-      </section>
+      </div>
     </footer>
 
     <section class="modal  modal-basket">
@@ -94,16 +93,16 @@
         <span class="modal-basket__size">Выберите размер:</span>
         <div class="modal-basket__list">
           <label class="modal-basket__label">
-            <span class="modal-basket__label-active">S</span>
             <input class="modal-basket__input" type="radio" name="product-size">
+            <span class="modal-basket__size-tag">S</span>
           </label>
           <label class="modal-basket__label">
-            <span>M</span>
             <input class="modal-basket__input" type="radio" name="product-size">
+            <span class="modal-basket__size-tag">M</span>
           </label>
           <label class="modal-basket__label">
-            <span>L</span>
             <input class="modal-basket__input" type="radio" name="product-size">
+            <span class="modal-basket__size-tag">L</span>
           </label>
         </div>
         <button class="modal-basket__add  button">Добавить</button>

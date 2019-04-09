@@ -1,0 +1,26 @@
+.review__title {
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.review__quote p {
+  font-size: 15px;
+  line-height: 30px;
+  color: $greyish-black;
+}
+
+.review__author {
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: $greyish-black;
+}
+
+.review__author-login {
+  font-size: 17px;
+  line-height: 30px;
+  color: $greyish-black;
+}

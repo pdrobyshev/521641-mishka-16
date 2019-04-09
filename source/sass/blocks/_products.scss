@@ -1,0 +1,27 @@
+.products {
+  background: url("../img/hero-mobile@1x.jpg") no-repeat center;
+}
+
+.products__title {
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  color: #010000;
+}
+
+.products__item--light-green {
+  background-color: $seafoam-blue;
+}
+
+.products__item--dark-green {
+  background-color: $seafoam-dark-blue;
+}
+
+.products__link {
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  color: #ffffff;
+}

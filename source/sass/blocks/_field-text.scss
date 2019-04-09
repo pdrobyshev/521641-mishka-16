@@ -1,0 +1,23 @@
+.field-text__name {
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.field-text__label-text {
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: $seafoam-blue;
+}
+
+.field-text__input {
+  font-size: 17px;
+  line-height: 18px;
+
+  &::placeholder {
+    color: rgba(68, 68, 68, 0.3);
+  }
+}

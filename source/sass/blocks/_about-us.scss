@@ -1,13 +1,11 @@
 .about-us__title {
-  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-weight: 700;
-  font-size: 25px;
-  line-height: 30px;
+  font-size: $lg-font;
+  line-height: $lg-line-height;
 }
 
 .about-us__item {
-  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-weight: 700;
-  font-size: 17px;
+  font-size: $m-font;
   line-height: 20px;
 }

@@ -3,10 +3,9 @@
 }
 
 .products__title {
-  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-weight: 700;
-  font-size: 27px;
-  line-height: 30px;
+  font-size: $xlg-font;
+  line-height: $lg-line-height;
   color: #010000;
 }
 
@@ -19,9 +18,7 @@
 }
 
 .products__link {
-  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 19px;
-  line-height: 24px;
   color: #ffffff;
 }

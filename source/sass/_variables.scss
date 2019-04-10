@@ -2,7 +2,20 @@ $default-black: #000000;
 $greyish-black: #444444;
 $seafoam-blue: #63d1bb;
 $seafoam-dark-blue: #56c3b2;
-$retina-dpi: 144dpi;
-$retina-dppx: 1.5dppx;
+
+$default-font: 13px;
+$s-font: 15px;
+$m-font: 17px;
+$lg-font: 25px;
+$xlg-font: 27px;
+
+$xs-line-height: 16px;
+$s-line-height: 18px;
+$default-line-height: 24px;
+$lg-line-height: 30px;
+
 $tablet-width: 768px;
 $desktop-width: 1150px;
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

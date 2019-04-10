@@ -1,20 +1,18 @@
 .modal-basket__title {
-  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-weight: 700;
-  font-size: 25px;
-  line-height: 30px;
+  font-size: $lg-font;
+  line-height: $lg-line-height;
 }
 
 .modal-basket__size {
-  font-size: 15px;
-  line-height: 30px;
+  font-size: $s-font;
+  line-height: $lg-line-height;
   color: $greyish-black;
 }
 
 .modal-basket__size-tag {
-  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-weight: 700;
-  font-size: 17px;
-  line-height: 16px;
+  font-size: $m-font;
+  line-height: $xs-line-height;
   color: $greyish-black;
 }

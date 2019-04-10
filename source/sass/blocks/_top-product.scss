@@ -1,35 +1,30 @@
 .top-product__title {
-  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-weight: 700;
-  font-size: 25px;
-  line-height: 30px;
+  font-size: $lg-font;
+  line-height: $lg-line-height;
 }
 
 .top-product__tag {
-  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-weight: 700;
-  font-size: 17px;
+  font-size: $m-font;
   line-height: 20px;
   color: $seafoam-blue;
 }
 
 .top-product__info p {
-  font-size: 15px;
-  line-height: 24px;
+  font-size: $s-font;
   color: $greyish-black;
 }
 
 .top-product__feature {
-  font-size: 15px;
+  font-size: $s-font;
   line-height: 20px;
   color: $greyish-black;
   font-weight: normal;
 }
 
 .top-product__price {
-  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: $m-font;
   color: $greyish-black;
 }

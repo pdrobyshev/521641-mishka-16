@@ -1,12 +1,8 @@
 .video__title {
-  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: $m-font;
 }
 
 .video__info {
-  font-size: 13px;
-  line-height: 24px;
   color: $greyish-black;
 }

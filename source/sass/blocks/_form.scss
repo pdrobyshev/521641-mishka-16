@@ -1,13 +1,12 @@
 .form__legend {
-  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-weight: 700;
-  font-size: 17px;
-  line-height: 16px;
+  font-size: $m-font;
+  line-height: $xs-line-height;
   color: $seafoam-blue;
 }
 
 .form__attention-text {
   font-size: 14px;
-  line-height: 16px;
+  line-height: $xs-line-height;
   color: $greyish-black;
 }

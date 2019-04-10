@@ -4,17 +4,17 @@
 
 .products__title {
   font-weight: 700;
-  font-size: $xlg-font;
-  line-height: $lg-line-height;
+  font-size: $font-size-xl;
+  line-height: $line-height-l;
   color: #010000;
 }
 
-.products__item--light-green {
-  background-color: $seafoam-blue;
+.products__item {
+  background-color: $color-secondary;
 }
 
 .products__item--dark-green {
-  background-color: $seafoam-dark-blue;
+  background-color: $color-secondary--dark;
 }
 
 .products__link {

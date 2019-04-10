@@ -1,23 +1,23 @@
 .review__title {
   font-weight: 700;
-  font-size: $lg-font;
-  line-height: $lg-line-height;
+  font-size: $font-size-l;
+  line-height: $line-height-l;
 }
 
 .review__quote p {
-  font-size: $s-font;
-  line-height: $lg-line-height;
-  color: $greyish-black;
+  font-size: $font-size-s;
+  line-height: $line-height-l;
+  color: $grey;
 }
 
 .review__author {
   font-weight: 700;
-  font-size: $m-font;
-  color: $greyish-black;
+  font-size: $font-size-m;
+  color: $grey;
 }
 
 .review__author-login {
-  font-size: $m-font;
-  line-height: $lg-line-height;
-  color: $greyish-black;
+  font-size: $font-size-m;
+  line-height: $line-height-l;
+  color: $grey;
 }

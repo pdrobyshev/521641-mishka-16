@@ -1,18 +1,18 @@
 .modal-basket__title {
   font-weight: 700;
-  font-size: $lg-font;
-  line-height: $lg-line-height;
+  font-size: $font-size-l;
+  line-height: $line-height-l;
 }
 
 .modal-basket__size {
-  font-size: $s-font;
-  line-height: $lg-line-height;
-  color: $greyish-black;
+  font-size: $font-size-s;
+  line-height: $line-height-l;
+  color: $grey;
 }
 
 .modal-basket__size-tag {
   font-weight: 700;
-  font-size: $m-font;
-  line-height: $xs-line-height;
-  color: $greyish-black;
+  font-size: $font-size-m;
+  line-height: $line-height-xs;
+  color: $grey;
 }

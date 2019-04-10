@@ -1,21 +1,18 @@
-$default-black: #000000;
-$greyish-black: #444444;
-$seafoam-blue: #63d1bb;
-$seafoam-dark-blue: #56c3b2;
+$color-main:            #000000;
+$grey:                  #444444;
+$color-secondary:       #63d1bb;
+$color-secondary--dark: #56c3b2;
 
-$default-font: 13px;
-$s-font: 15px;
-$m-font: 17px;
-$lg-font: 25px;
-$xlg-font: 27px;
+$font-size:    13px;
+$font-size-s:  15px;
+$font-size-m:  17px;
+$font-size-l:  25px;
+$font-size-xl: 27px;
 
-$xs-line-height: 16px;
-$s-line-height: 18px;
-$default-line-height: 24px;
-$lg-line-height: 30px;
+$line-height:    24px;
+$line-height-xs: 0.666em;
+$line-height-s:  0.75em;
+$line-height-l:  1.25em;
 
-$tablet-width: 768px;
-$desktop-width: 1150px;
-
-$retina-dpi: 144dpi;
-$retina-dppx: 1.5dppx;
+$screen-sm: 768px;
+$screen-md: 1150px;

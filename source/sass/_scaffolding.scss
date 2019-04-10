@@ -13,20 +13,18 @@ body {
   margin: 0;
   padding: 0;
 
-  color: $default-black;
+  color: $color-main;
   font-family: "Open Sans", "Arial", sans-serif;
-  font-size: $default-font;
-  line-height: $default-line-height;
+  font-size: $font-size;
+  line-height: $line-height;
 }
 
 img {
-  display: block;
   max-width: 100%;
   height: auto;
 }
 
 a {
-  color: $default-black;
   text-decoration: none;
 }
 

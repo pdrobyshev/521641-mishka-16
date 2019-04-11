@@ -1,11 +1,11 @@
 .contacts__title {
   font-weight: 700;
-  font-size: 18px;
-  line-height: $line-height-l;
+  font-size: $font-size-m + 1;
+  line-height: 1.666em;
 }
 
 .contacts__text {
   font-size: $font-size-s;
-  line-height: $line-height-l;
+  line-height: 2em;
   color: $grey;
 }

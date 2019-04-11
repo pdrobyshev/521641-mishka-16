@@ -1,20 +1,20 @@
 .field-text__name {
   font-weight: 700;
   font-size: $font-size-m;
-  line-height: $line-height-s;
+  line-height: 1.058em;
 }
 
 .field-text__label-text {
   font-weight: 700;
   font-size: $font-size-m;
-  line-height: $line-height-xs;
+  line-height: 0.941em;
   color: $color-secondary;
 }
 
 .field-text__input {
   font: inherit;
-  font-size: 17px;
-  line-height: $line-height-s;
+  font-size: $font-size-m;
+  line-height: 1.058em;
 
   &::placeholder {
     color: rgba(68, 68, 68, 0.3);

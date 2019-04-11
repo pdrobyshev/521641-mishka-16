@@ -1,12 +1,12 @@
 .form__legend {
   font-weight: 700;
   font-size: $font-size-m;
-  line-height: $line-height-xs;
+  line-height: 0.941em;
   color: $color-secondary;
 }
 
 .form__attention-text {
-  font-size: 14px;
-  line-height: $line-height-xs;
+  font-size: $font-size + 1;
+  line-height: 1.142em;
   color: $grey;
 }

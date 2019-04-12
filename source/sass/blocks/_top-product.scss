@@ -1,0 +1,32 @@
+.top-product__title {
+  font-weight: 700;
+  font-size: $font-size-l;
+  line-height: 1.2em;
+}
+
+.top-product__tag {
+  font-weight: 700;
+  font-size: $font-size-m;
+  line-height: 1.176em;
+  color: $color-secondary;
+}
+
+.top-product__info p {
+  font-size: $font-size-s;
+  line-height: 1.6em;
+  color: $grey;
+}
+
+.top-product__feature {
+  font-weight: normal;
+  font-size: $font-size-s;
+  line-height: 1.333em;
+  color: $grey;
+}
+
+.top-product__price {
+  font-weight: 700;
+  font-size: $font-size-m;
+  line-height: 1.411em;
+  color: $grey;
+}

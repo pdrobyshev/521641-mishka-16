@@ -1,0 +1,18 @@
+.card__name {
+  font-weight: 700;
+  font-size: $font-size-m;
+  line-height: 1.411em;
+  color: $color-main;
+}
+
+.card__stats {
+  line-height: 2.307em;
+  color: $grey;
+}
+
+.card__price {
+  font-weight: 700;
+  font-size: $font-size-s;
+  line-height: 1.6em;
+  color: $color-main;
+}

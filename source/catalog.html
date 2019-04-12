@@ -2,13 +2,17 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <a class="logo  page-header__logo" href="index.html">
-        <img src="http://placehold.it/86x35" alt="Логотип магазина вязаных игрушек Mishka" width="86" height="35">
+        <img src="img/logo-mobile.svg" alt="Логотип магазина вязаных игрушек Mishka" width="86" height="35">
       </a>
+
       <nav class="main-nav">
         <button class="main-nav__toggle">Открыть меню</button>
         <ul class="main-nav__list">
@@ -27,12 +31,14 @@
         </ul>
       </nav>
     </header>
+
     <main class="page-main">
       <h1 class="page-main__title">Каталог товаров</h1>
+
       <div class="cards  page-main__cards">
         <article class="card">
           <a class="card__item-link" href="#">
-            <img class="card__item-img" src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик" width="260" height="195">
+            <img class="card__item-img" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик" width="260" height="195">
             <h2 class="card__name">Зайчик-попрыгайчик</h2>
             <span class="card__stats">Рост 30 см, вес 200 г</span>
             <span class="card__price">1 200 руб.</span>
@@ -40,7 +46,7 @@
         </article>
         <article class="card">
           <a class="card__item-link" href="#">
-            <img class="card__item-img" src="http://placehold.it/260x195" alt="Корзинка для белья" width="260" height="195">
+            <img class="card__item-img" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья" width="260" height="195">
             <h2 class="card__name">Корзинка для белья</h2>
             <span class="card__stats">Диаметр 15 см, высота 10 см</span>
             <span class="card__price">690 руб.</span>
@@ -48,48 +54,51 @@
         </article>
         <article class="card">
           <a class="card__item-link" href="#">
-            <img class="card__item-img" src="http://placehold.it/260x195" alt="Большая корзинка для игрушек" width="260" height="195">
+            <img class="card__item-img" src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек" width="260" height="195">
             <h2 class="card__name">Большая корзинка для игрушек</h2>
             <span class="card__stats">Диаметр 30 см, высота 30 см</span>
             <span class="card__price">1 500 руб.</span>
           </a>
         </article>
       </div>
+
       <section class="video  page-main__video">
         <h2 class="video__title">Процесс производства</h2>
-        <img class="video__image" src="http://placehold.it/260x160" alt="Процесс производства">
+        <img class="video__image" src="img/video-mobile@1x.jpg" alt="Процесс производства">
         <p class="video__info">
           По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
         </p>
         <button class="button">Сделать заказ</button>
       </section>
     </main>
+
     <footer class="page-footer">
       <div class="social  page-footer__social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link" href="#">
               Инстаграмм
-              <img src="http://placehold.it/21x22" alt="Мы в инстаграмме" width="21" height="22">
+              <img src="img/icon-insta.svg" alt="Мы в инстаграмме" width="21" height="22">
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="#">
               Фейсбук
-              <img src="http://placehold.it/15x28" alt="Мы в фейсбуке" width="15" height="28">
+              <img src="img/icon-fb.svg" alt="Мы в фейсбуке" width="15" height="28">
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="#">
               Твиттер
-              <img src="http://placehold.it/23x20" alt="Мы в твиттере" width="23" height="20">
+              <img src="img/icon-twitter.svg" alt="Мы в твиттере" width="23" height="20">
             </a>
           </li>
         </ul>
+
         <div class="copyright">
           <span class="copyright__text">Разработано</span>
           <a class="copyright__htmlacademy" href="#">
-            <img src="http://placehold.it/320x457" alt="Логотип HTML Academy" width="27" height="34">
+            <img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy" width="27" height="34">
           </a>
         </div>
       </div>

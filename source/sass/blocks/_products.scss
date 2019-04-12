@@ -1,0 +1,25 @@
+.products {
+  background: url("../img/hero-mobile@1x.jpg") no-repeat center;
+}
+
+.products__title {
+  font-weight: 700;
+  font-size: $font-size-xl;
+  line-height: 1.1em;
+  color: #010000;
+}
+
+.products__item {
+  background-color: $color-secondary;
+}
+
+.products__item--dark-green {
+  background-color: $color-secondary--dark;
+}
+
+.products__link {
+  font-weight: 700;
+  font-size: $font-size-m + 2;
+  line-height: 1.263em;
+  color: #ffffff;
+}

@@ -1,9 +1,44 @@
+.video {
+  margin-bottom: 58px;
+  padding: 0 30px;
+}
+
+.video__wrapper {
+  border: 1px solid $background-grey--darken;
+}
+
 .video__title {
+  margin: 0;
+  padding: 0 34px;
+  padding-top: 29px;
+  padding-bottom: 26px;
+
   font-weight: 700;
   font-size: $font-size-m;
   line-height: 1.411em;
 }
 
+.video__image {
+  display: block;
+  width: 260px;
+  height: 150px;
+}
+
 .video__info {
+  margin: 0;
+  padding: 34px;
+  padding-bottom: 29px;
+
   color: $grey;
+}
+
+.video__button {
+  display: block;
+  max-width: 192px;
+  margin: 0 auto;
+  margin-bottom: 33px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  text-transform: uppercase;
 }

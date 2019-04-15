@@ -1,11 +1,25 @@
+.page-main {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
 .page-main__title {
+  margin: 0;
+  padding: 75px 40px;
+
   font-weight: 700;
   font-size: $font-size-xl;
   line-height: 1.1em;
+  text-align: center;
 
   background: $background-grey;
 }
 
 .page-main__intro {
   color: $grey;
+}
+
+.page-main__cards {
+  padding: 30px;
+  padding-bottom: 0;
 }

@@ -1,4 +1,23 @@
+.card {
+  margin-bottom: 30px;
+
+  border: 1px solid $background-grey--darken;
+}
+
+.card__item-img {
+  display: block;
+  width: 260px;
+  height: 195px;
+}
+
+.card__info {
+  padding: 30px 28px;
+}
+
 .card__name {
+  margin: 0;
+  margin-bottom: 17px;
+
   font-weight: 700;
   font-size: $font-size-m;
   line-height: 1.411em;
@@ -6,8 +25,13 @@
 }
 
 .card__stats {
+  display: block;
+  padding-bottom: 27px;
+  margin-bottom: 27px;
+
   line-height: 2.307em;
   color: $grey;
+  border-bottom: 1px solid $background-grey--darken;
 }
 
 .card__price {

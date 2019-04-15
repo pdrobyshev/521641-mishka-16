@@ -1,5 +1,25 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 30px;
+  padding-bottom: 31px;
+}
+
 .copyright__text {
+  display: block;
+  margin-right: 30px;
+
   font-weight: 700;
   font-size: $font-size-m + 2;
   line-height: 0.947em;
+}
+
+.copyright__htmlacademy {
+  flex-shrink: 0;
+
+  img {
+    width: 27px;
+    height: 34px;
+  }
 }

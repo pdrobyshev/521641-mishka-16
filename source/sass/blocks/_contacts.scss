@@ -1,11 +1,52 @@
+.contacts {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 44px 0;
+  padding-bottom: 39px;
+}
+
 .contacts__title {
+  margin: 0;
+  margin-bottom: 42px;
+  padding: 0 30px;
+
   font-weight: 700;
   font-size: $font-size-m + 1;
   line-height: 1.666em;
 }
 
 .contacts__text {
+  display: flex;
+  margin: 0;
+  padding: 0 30px;
+
   font-size: $font-size-s;
   line-height: 2em;
   color: $grey;
+
+  &:first-of-type {
+    margin-bottom: 12px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 42px;
+  }
+}
+
+.contacts__left {
+  margin-right: 32px;
+}
+
+.contacts__right--email {
+  border-bottom: 1px solid $color-secondary;
+}
+
+.contacts__map {
+  margin-bottom: 39px;
+}
+
+.contacts__button {
+  display: block;
+  max-width: 260px;
+  margin: 0 auto;
 }

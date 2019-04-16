@@ -101,9 +101,13 @@
 @media (min-width: $screen-md) {
   .products {
     max-width: $screen-md;
-    padding: 0 240px;
+    padding: 0 50px;
     padding-top: 161px;
 
     background: url("../img/hero-desktop@1x.jpg") no-repeat top center;
+  }
+
+  .products__title br:last-child {
+    display: block;
   }
 }

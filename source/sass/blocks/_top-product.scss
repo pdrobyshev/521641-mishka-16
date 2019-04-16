@@ -5,7 +5,7 @@
   padding-bottom: 42px;
 
   background: url("../img/bg-zigzag-line.svg") no-repeat bottom;
-  background-size: 100% 6px;
+  background-size: 100% 7px;
 }
 
 .top-product__title {
@@ -85,4 +85,144 @@
   display: block;
 
   text-align: center;
+}
+
+@media (min-width: $screen-sm) {
+  .top-product {
+    max-width: $screen-sm;
+    padding: 55px 52px;
+    padding-bottom: 53px;
+
+    background-size: 100% 16px;
+  }
+
+  .top-product__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 55px;
+  }
+
+  .top-product__title {
+    margin: 0;
+
+    font-size: 43px;
+    line-height: 1.16em;
+  }
+
+  .top-product__tag {
+    max-width: 70px;
+    margin: 0;
+
+    line-height: 1em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .top-product__info-wrapper {
+    position: relative;
+  }
+
+  .top-product__info {
+    max-width: 292px;
+
+    p {
+      margin-bottom: 41px;
+
+      font-size: $font-size-m;
+      line-height: 1.76em;
+    }
+  }
+
+  .top-product__features-table {
+    max-width: 292px;
+    margin-bottom: 59px;
+  }
+
+  .top-product__price {
+    max-width: 292px;
+    margin-bottom: 34px;
+
+    line-height: 1.41em;
+  }
+
+  .top-product__button {
+    max-width: 292px;
+    padding-top: 14px;
+
+    font-size: $font-size-m;
+    line-height: 1.18em;
+  }
+
+  .top-product__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 333px;
+    height: 404px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $screen-md) {
+  .top-product {
+    position: relative;
+
+    max-width: $screen-md;
+    margin-top: 72px;
+    padding: 72px 0;
+    padding-bottom: 95px;
+
+    background-size: 100% 23px;
+  }
+
+  .top-product__header {
+    position: relative;
+
+    padding: 0 225px;
+    margin-bottom: 52px;
+  }
+
+  .top-product__title {
+    margin: 0;
+
+    font-size: 53px;
+    line-height: 1.08em;
+  }
+
+  .top-product__tag {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 97px;
+
+    max-width: 70px;
+    margin: 0;
+
+    line-height: 1em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .top-product__info-wrapper {
+    position: static;
+
+    padding: 0 225px;
+  }
+
+  .top-product__info p {
+    margin-bottom: 66px;
+  }
+
+  .top-product__features-table {
+    margin-bottom: 84px;
+  }
+
+  .top-product__image {
+    z-index: -1;
+
+    width: 525px;
+    height: 636px;
+  }
 }

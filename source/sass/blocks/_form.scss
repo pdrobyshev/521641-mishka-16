@@ -1,4 +1,39 @@
+.form {
+  padding: 0 30px;
+  padding-bottom: 55px;
+}
+
+.form__fieldset {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+
+  border: none;
+
+  &::before {
+    position: absolute;
+    top: 8px;
+    left: 65px;
+
+    content: "";
+    display: block;
+    width: 198px;
+    height: 1px;
+
+    background-color: $color-secondary;
+  }
+
+  &:nth-child(3),
+  &:nth-child(4),
+  &:nth-child(5) {
+    margin-bottom: 10px;
+  }
+}
+
 .form__legend {
+  margin-bottom: 35px;
+
   font-weight: 700;
   font-size: $font-size-m;
   line-height: 0.941em;
@@ -6,6 +41,9 @@
 }
 
 .form__attention-text {
+  margin: 0;
+  margin-bottom: 31px;
+
   font-size: $font-size + 1;
   line-height: 1.142em;
   color: $grey;

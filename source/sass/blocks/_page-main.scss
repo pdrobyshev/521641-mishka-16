@@ -5,7 +5,7 @@
 
 .page-main__title {
   margin: 0;
-  padding: 75px 40px;
+  padding: 75px 36px;
 
   font-weight: 700;
   font-size: $font-size-xl;
@@ -16,6 +16,9 @@
 }
 
 .page-main__intro {
+  margin: 0;
+  padding: 30px;
+
   color: $grey;
 }
 

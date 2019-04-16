@@ -1,5 +1,21 @@
+.field-radio {
+  display: block;
+}
+
+.field-radio__input {
+  display: none;
+}
+
 .field-radio__text {
+  display: block;
+  margin-bottom: 25px;
+  padding: 0 62px;
+
   font-weight: 700;
   font-size: $font-size-m;
   line-height: 1.058em;
+}
+
+.field-radio:last-of-type .field-radio__text {
+  margin-bottom: 45px;
 }

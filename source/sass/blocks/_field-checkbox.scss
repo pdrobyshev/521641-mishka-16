@@ -1,4 +1,16 @@
+.field-checkbox {
+  display: block;
+}
+
+.field-checkbox__input {
+  display: none;
+}
+
 .field-checkbox__text {
+  display: block;
+  margin-bottom: 44px;
+  padding: 0 64px;
+
   font-weight: 700;
   font-size: $font-size-m;
   line-height: 1.058em;

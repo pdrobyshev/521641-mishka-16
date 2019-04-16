@@ -2,12 +2,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 79px;
+  padding: 22px;
 
   box-shadow: 0 1px 0 0 $background-grey--darken, inset 0 1px 0 0 $background-grey--darken;
+
+  img {
+    width: 86px;
+    height: 35px;
+  }
 }
 
-.logo img {
-  width: 86px;
-  height: 35px;
+@media (min-width: $screen-sm) {
+  .logo {
+    padding: 0;
+
+    box-shadow: none;
+
+    img {
+      width: 102px;
+      height: 34px;
+    }
+  }
 }

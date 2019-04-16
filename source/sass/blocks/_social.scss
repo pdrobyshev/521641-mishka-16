@@ -43,3 +43,25 @@
   width: 23px;
   height: 20px;
 }
+
+@media (min-width: $screen-sm) {
+  .social {
+    display: flex;
+    align-items: center;
+  }
+
+  .social__list {
+    margin: 0;
+    margin-left: 159px;
+    margin-right: auto;
+    padding: 0;
+
+    border: none;
+  }
+}
+
+@media (min-width: $screen-md) {
+  .social__list {
+    margin-left: 349px;
+  }
+}

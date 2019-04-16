@@ -24,3 +24,9 @@
     height: 34px;
   }
 }
+
+@media (min-width: $screen-sm) {
+  .copyright {
+    padding: 0;
+  }
+}

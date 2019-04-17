@@ -12,11 +12,12 @@
   font-size: $font-size-m;
   line-height: 0.941em;
   color: $color-secondary;
+  text-transform: uppercase;
 }
 
 .field-text__input {
   width: 100%;
-  padding: 14px 0;
+  padding: 14px 16px;
   margin-bottom: 24px;
 
   font: inherit;
@@ -40,4 +41,64 @@
   vertical-align: middle;
 
   border: 2px solid $grey;
+}
+
+@media (min-width: $screen-sm) {
+  .field-text {
+    display: flex;
+    margin-bottom: 24px;
+  }
+
+  .field-text__name {
+    display: flex;
+    align-items: center;
+    min-height: 52px;
+    margin: 0;
+    margin-right: 26px;
+
+    font-size: $font-size-m + 2;
+    line-height: 0.95em;
+  }
+
+  .form__fieldset--tel .field-text__input {
+    margin: 0;
+
+    font-size: $font-size-m + 2;
+    line-height: 0.95em;
+    background: $background-grey;
+  }
+
+  .form__fieldset--email .field-text__input {
+    margin: 0;
+
+    font-size: $font-size-m + 2;
+    line-height: 0.95em;
+    background: $background-grey;
+  }
+
+  .field-text__label-text--tel {
+    position: absolute;
+    top: 69px;
+    left: 51px;
+  }
+
+  .field-text__label-text--email {
+    position: absolute;
+    top: 20px;
+    left: 51px;
+  }
+
+  .field-text__label-text--more {
+    position: absolute;
+    top: 20px;
+    left: 51px;
+  }
+
+  .field-text--more {
+    margin-bottom: 52px;
+  }
+
+  .field-text__input--textarea {
+    margin: 0;
+  }
 }

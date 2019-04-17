@@ -15,3 +15,28 @@
   font-size: $font-size-m;
   line-height: 1.058em;
 }
+
+@media (min-width: $screen-sm) {
+  .field-checkbox__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .field-checkbox {
+    min-width: 35%;
+    margin-bottom: 60px;
+  }
+
+  .field-checkbox__text {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: $screen-md) {
+  .field-checkbox {
+    min-width: 30%;
+    margin-bottom: 60px;
+  }
+}

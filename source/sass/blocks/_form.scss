@@ -38,6 +38,7 @@
   font-size: $font-size-m;
   line-height: 0.941em;
   color: $color-secondary;
+  text-transform: uppercase;
 }
 
 .form__attention-text {
@@ -47,4 +48,154 @@
   font-size: $font-size + 1;
   line-height: 1.142em;
   color: $grey;
+}
+
+@media (min-width: $screen-sm) {
+  .form {
+    padding: 0;
+  }
+
+  .form__fieldset {
+    position: relative;
+
+    margin-bottom: 10px;
+    padding: 0 50px;
+  }
+
+  .form__fieldset--color,
+  .form__fieldset--tel,
+  .form__fieldset--email {
+    background-color: $background-grey;
+  }
+
+  .form__fieldset--color {
+    margin-bottom: 68px;
+    padding-top: 66px;
+    padding-bottom: 10px;
+    padding-left: 300px;
+  }
+
+  .form__fieldset--name {
+    padding-left: 218px;
+  }
+
+  .form__fieldset:nth-child(3) {
+    margin-bottom: 26px;
+  }
+
+  .form__fieldset:nth-child(4) {
+    margin-bottom: 0;
+  }
+
+  .form__fieldset:nth-child(5) {
+    margin-bottom: 50px;
+  }
+
+  .form__fieldset--tel {
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 217px;
+  }
+
+  .form__fieldset--email {
+    padding-left: 217px;
+    padding-bottom: 26px;
+  }
+
+  .form__fieldset--more {
+    margin: 0;
+    padding-left: 217px;
+  }
+
+  .form__legend {
+    position: absolute;
+    top: 0;
+    left: 52px;
+
+    margin: 0;
+  }
+
+  .form__legend--color {
+    top: 50px;
+  }
+
+  .form__legend--name {
+    top: 31px;
+  }
+
+  .form__fieldset::before {
+    display: none;
+  }
+
+  .form__button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 50px;
+    padding: 0 50px;
+  }
+
+  .form__button {
+    order: -1;
+    max-width: 230px;
+
+    font-size: $font-size-m;
+    line-height: 0.94em;
+  }
+
+  .form__attention-text {
+    margin: 0;
+
+    font-size: $font-size-m;
+    line-height: 1.76em;
+  }
+}
+
+@media (min-width: $screen-md) {
+  .form__fieldset {
+    padding: 0 112px;
+  }
+
+  .form__legend {
+    left: 112px;
+  }
+
+  .form__fieldset--color {
+    margin-bottom: 50px;
+    padding-top: 66px;
+    padding-left: 306px;
+  }
+
+  .form__legend--color {
+    top: 67px;
+    left: 112px;
+  }
+
+  .form__fieldset--name {
+    padding-left: 226px;
+    padding-right: 226px;
+  }
+
+  .form__fieldset--tel {
+    padding-top: 50px;
+    padding-left: 226px;
+    padding-right: 226px;
+  }
+
+  .form__fieldset--email {
+    padding-bottom: 26px;
+    padding-left: 226px;
+    padding-right: 226px;
+  }
+
+  .form__fieldset--more {
+    padding-left: 226px;
+    padding-right: 226px;
+  }
+
+  .form__button-wrapper {
+    padding-left: 226px;
+    padding-right: 226px;
+  }
 }

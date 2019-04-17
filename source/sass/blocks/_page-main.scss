@@ -5,7 +5,7 @@
 
 .page-main__title {
   margin: 0;
-  padding: 75px 40px;
+  padding: 75px 36px;
 
   font-weight: 700;
   font-size: $font-size-xl;
@@ -15,7 +15,14 @@
   background: $background-grey;
 }
 
+.page-main__shipping {
+  display: none;
+}
+
 .page-main__intro {
+  margin: 30px;
+
+  line-height: 1.85em;
   color: $grey;
 }
 
@@ -26,7 +33,21 @@
 
 @media (min-width: $screen-sm) {
   .page-main {
+    position: relative;
+
     max-width: $screen-sm;
+  }
+
+  .page-main__shipping {
+    position: absolute;
+    top: 25px;
+    right: 52px;
+
+    display: block;
+
+    font-size: $font-size-s;
+    line-height: 1.6em;
+    color: $grey;
   }
 
   .page-main__title {
@@ -40,6 +61,14 @@
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 100% 23px;
+  }
+
+  .page-main__intro {
+    margin: 68px 52px;
+    margin-bottom: 80px;
+
+    font-size: $font-size-m;
+    line-height: 1.76em;
   }
 
   .page-main__cards {
@@ -69,5 +98,11 @@
     flex-direction: row;
     justify-content: space-between;
     padding-top: 128px;
+  }
+
+  .page-main__intro {
+    max-width: 672px;
+    margin: 80px auto;
+    margin-top: 112px;
   }
 }

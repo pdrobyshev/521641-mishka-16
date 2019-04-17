@@ -43,6 +43,10 @@
   color: #ffffff;
 }
 
+.products__shipping {
+  display: none;
+}
+
 @media (min-width: $screen-sm) {
   .products {
     position: relative;
@@ -68,6 +72,18 @@
 
       background: url("../img/bg-zigzag-fill.svg") no-repeat top center;
     }
+  }
+
+  .products__shipping {
+    position: absolute;
+    top: 25px;
+    right: 52px;
+
+    display: block;
+
+    font-size: $font-size-s;
+    line-height: 1.6em;
+    color: $grey;
   }
 
   .products__title {

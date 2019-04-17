@@ -5,18 +5,29 @@
   padding: 22px;
 
   box-shadow: 0 1px 0 0 $background-grey--darken, inset 0 1px 0 0 $background-grey--darken;
+}
 
-  img {
-    width: 86px;
-    height: 35px;
-  }
+.logo__img {
+  width: 86px;
+  height: 35px;
 }
 
 @media (min-width: $screen-sm) {
   .logo {
+    margin-right: auto;
     padding: 0;
 
     box-shadow: none;
+
+    picture {
+      display: flex;
+      flex-shrink: 0;
+    }
+  }
+
+  .logo__img {
+    width: 112px;
+    height: 46px;
   }
 
   .logo__footer-img {

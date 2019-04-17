@@ -34,3 +34,9 @@
   line-height: 1.411em;
   color: $color-main;
 }
+
+@media (min-width: $screen-sm) {
+  .main-nav__toggle {
+    display: none;
+  }
+}

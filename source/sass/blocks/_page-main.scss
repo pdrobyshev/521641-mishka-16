@@ -5,7 +5,7 @@
 
 .page-main__title {
   margin: 0;
-  padding: 75px 36px;
+  padding: 75px 40px;
 
   font-weight: 700;
   font-size: $font-size-xl;
@@ -16,13 +16,58 @@
 }
 
 .page-main__intro {
-  margin: 0;
-  padding: 30px;
-
   color: $grey;
 }
 
 .page-main__cards {
   padding: 30px;
   padding-bottom: 0;
+}
+
+@media (min-width: $screen-sm) {
+  .page-main {
+    max-width: $screen-sm;
+  }
+
+  .page-main__title {
+    padding-top: 99px;
+    padding-bottom: 78px;
+
+    font-size: 43px;
+    line-height: 1.16em;
+
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 23px;
+  }
+
+  .page-main__cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 79px 50px;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: $screen-md) {
+  .page-main {
+    max-width: $screen-md;
+  }
+
+  .page-main__title {
+    padding-bottom: 99px;
+
+    font-size: 53px;
+    line-height: 1.08em;
+
+    background-size: 100% 34px;
+  }
+
+  .page-main__cards {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 128px;
+  }
 }

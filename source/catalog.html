@@ -38,7 +38,11 @@
       <div class="cards  page-main__cards">
         <article class="card">
           <a class="card__item-link" href="#">
-            <img class="card__item-img" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик" width="260" height="195">
+            <picture>
+              <source srcset="img/photo-hare-desktop@1x.jpg" media="(min-width: 1150px)">
+              <source srcset="img/photo-hare-tablet@1x.jpg" media="(min-width: 768px)">
+              <img class="card__item-img" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик" width="260" height="195">
+            </picture>
             <div class="card__info">
               <h2 class="card__name">Зайчик-попрыгайчик</h2>
               <span class="card__stats">Рост 30 см, вес 200 г</span>
@@ -48,7 +52,11 @@
         </article>
         <article class="card">
           <a class="card__item-link" href="#">
-            <img class="card__item-img" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья" width="260" height="195">
+            <picture>
+              <source srcset="img/photo-bowl-desktop@1x.jpg" media="(min-width: 1150px)">
+              <source srcset="img/photo-bowl-tablet@1x.jpg" media="(min-width: 768px)">
+              <img class="card__item-img" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья" width="260" height="195">
+            </picture>
             <div class="card__info">
               <h2 class="card__name">Корзинка для белья</h2>
               <span class="card__stats">Диаметр 15 см, высота 10 см</span>
@@ -58,7 +66,11 @@
         </article>
         <article class="card">
           <a class="card__item-link" href="#">
-            <img class="card__item-img" src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек" width="260" height="195">
+            <picture>
+              <source srcset="img/photo-toys-desktop@1x.jpg" media="(min-width: 1150px)">
+              <source srcset="img/photo-toys-tablet@1x.jpg" media="(min-width: 768px)">
+              <img class="card__item-img" src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек" width="260" height="195">
+            </picture>
             <div class="card__info">
               <h2 class="card__name">Большая корзинка для игрушек</h2>
               <span class="card__stats">Диаметр 30 см, высота 30 см</span>
@@ -70,8 +82,12 @@
 
       <section class="video  page-main__video">
         <div class="video__wrapper">
-          <h2 class="video__title">Процесс производства</h2>
-          <img class="video__image" src="img/video-mobile@1x.jpg" alt="Процесс производства" width="260" height="150">
+          <h2 class="video__title">Процесс<br> производства</h2>
+          <picture>
+            <source srcset="img/video-desktop@1x.jpg" media="(min-width: 1150px)">
+            <source srcset="img/video-tablet@1x.jpg" media="(min-width: 768px)">
+            <img class="video__image" src="img/video-mobile@1x.jpg" alt="Процесс производства" width="260" height="150">
+          </picture>
           <p class="video__info">
             По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
           </p>
@@ -82,6 +98,10 @@
 
     <footer class="page-footer">
       <div class="social  page-footer__social">
+        <a class="logo  page-footer__logo">
+          <img src="img/logo-footer.svg" alt="Логотип магазина вязаных игрушек Mishka" width="102" height="34">
+        </a>
+
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link" href="#">

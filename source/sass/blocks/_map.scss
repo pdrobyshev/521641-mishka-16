@@ -1,3 +1,17 @@
 .map__static {
   display: block;
 }
+
+@media (min-width: $screen-sm) {
+  .map__static {
+    flex-shrink: 0;
+    width: 768px;
+    height: 457px;
+  }
+}
+
+@media (min-width: $screen-md) {
+  .map__static {
+    min-width: 525px;
+  }
+}

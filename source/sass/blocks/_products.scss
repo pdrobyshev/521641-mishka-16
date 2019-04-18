@@ -7,7 +7,8 @@
 }
 
 .products__title {
-  margin: 0;
+  max-width: 250px;
+  margin: 0 auto;
   margin-bottom: 120px;
 
   font-weight: 700;
@@ -87,6 +88,7 @@
   }
 
   .products__title {
+    max-width: 500px;
     margin-bottom: auto;
 
     font-size: 43px;

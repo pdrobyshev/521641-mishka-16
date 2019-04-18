@@ -44,64 +44,84 @@
     content: "";
     display: block;
   }
-}
 
-.about-us__item--ecology::before {
-  left: 8px;
-  top: -60px;
+  &--ecology {
+    max-width: 196px;
 
-  width: 32px;
-  height: 40px;
+    &::before {
+      left: 8px;
+      top: -60px;
 
-  background: url("../img/icon-feature-flower.svg") no-repeat center;
-}
+      width: 32px;
+      height: 40px;
 
-.about-us__item--style::before {
-  top: -58px;
+      background: url("../img/icon-feature-flower.svg") no-repeat center;
+    }
+  }
 
-  width: 47px;
-  height: 30px;
+  &--style {
+    max-width: 224px;
 
-  background: url("../img/icon-feature-money.svg") no-repeat center;
-}
+    &::before {
+      top: -58px;
 
-.about-us__item--likes::before {
-  left: 7px;
-  top: -53px;
+      width: 47px;
+      height: 30px;
 
-  width: 34px;
-  height: 30px;
+      background: url("../img/icon-feature-money.svg") no-repeat center;
+    }
+  }
 
-  background: url("../img/icon-feature-heart.svg") no-repeat center;
-}
+  &--likes {
+    max-width: 204px;
 
-.about-us__item--handmade::before {
-  left: 3px;
-  top: -55px;
+    &::before {
+      left: 7px;
+      top: -53px;
 
-  width: 35px;
-  height: 35px;
+      width: 34px;
+      height: 30px;
 
-  background: url("../img/icon-feature-ball.svg") no-repeat center;
-}
+      background: url("../img/icon-feature-heart.svg") no-repeat center;
+    }
+  }
 
-.about-us__item--home::before {
-  top: -53px;
+  &--handmade {
+    max-width: 250px;
 
-  width: 55px;
-  height: 23px;
+    &::before {
+      left: 3px;
+      top: -55px;
 
-  background: url("../img/icon-feature-rocket.svg") no-repeat center;
-}
+      width: 35px;
+      height: 35px;
 
-.about-us__item--gift::before {
-  left: 3px;
-  top: -55px;
+      background: url("../img/icon-feature-ball.svg") no-repeat center;
+    }
+  }
 
-  width: 33px;
-  height: 32px;
+  &--home::before {
+    top: -53px;
 
-  background: url("../img/icon-feature-gift.svg") no-repeat center;
+    width: 55px;
+    height: 23px;
+
+    background: url("../img/icon-feature-rocket.svg") no-repeat center;
+  }
+
+  &--gift {
+    max-width: 250px;
+
+    &::before {
+      left: 3px;
+      top: -55px;
+
+      width: 33px;
+      height: 32px;
+
+      background: url("../img/icon-feature-gift.svg") no-repeat center;
+    }
+  }
 }
 
 
@@ -137,30 +157,36 @@
     &:last-child {
       margin-bottom: 82px;
     }
-  }
 
-  .about-us__item--ecology {
-    order: 1;
-  }
+    &--ecology {
+      max-width: 232px;
+      order: 1;
+    }
 
-  .about-us__item--handmade {
-    order: 2;
-  }
+    &--handmade {
+      max-width: 248px;
+      order: 2;
+    }
 
-  .about-us__item--style {
-    order: 3;
-  }
+    &--style {
+      max-width: 100%;
+      order: 3;
+    }
 
-  .about-us__item--home {
-    order: 4;
-  }
+    &--home {
+      max-width: 100%;
+      order: 4;
+    }
 
-  .about-us__item--likes {
-    order: 5;
-  }
+    &--likes {
+      max-width: 100%;
+      order: 5;
+    }
 
-  .about-us__item--gift {
-    order: 6;
+    &--gift {
+      max-width: 100%;
+      order: 6;
+    }
   }
 }
 

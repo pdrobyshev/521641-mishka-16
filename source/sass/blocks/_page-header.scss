@@ -15,3 +15,9 @@
     border-bottom: 1px solid $grey-light;
   }
 }
+
+@media (min-width: $screen-md) {
+  .page-header {
+    max-width: $screen-md;
+  }
+}

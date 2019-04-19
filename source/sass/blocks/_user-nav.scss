@@ -10,3 +10,15 @@
     left: -434px;
   }
 }
+
+@media (min-width: $screen-md) {
+  .user-nav {
+    top: auto;
+    left: auto;
+
+    order: -1;
+    max-width: 375px;
+
+    margin-right: 75px;
+  }
+}

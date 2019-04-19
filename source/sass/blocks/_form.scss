@@ -71,6 +71,10 @@
       background-color: $grey-lightest;
     }
 
+    &--type {
+      padding-left: 300px;
+    }
+
     &--color {
       margin-bottom: 68px;
       padding-top: 66px;
@@ -122,7 +126,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     margin-bottom: 50px;
     padding: 0 50px;
   }
@@ -146,6 +149,10 @@
 @media (min-width: $screen-md) {
   .form__fieldset {
     padding: 0 112px;
+
+    &--type {
+      padding-left: 306px;
+    }
 
     &--color {
       margin-bottom: 50px;

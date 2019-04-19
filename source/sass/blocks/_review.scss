@@ -67,14 +67,14 @@
   font-size: 0;
   border: 1px solid $grey-light;
   background-color: transparent;
-}
 
-.review__button--prev {
-  background: url("../img/icon-left-arrow.svg") no-repeat center;
-}
+  &--prev {
+    background: url("../img/icon-left-arrow.svg") no-repeat center;
+  }
 
-.review__button--next {
-  background: url("../img/icon-right-arrow.svg") no-repeat center;
+  &--next {
+    background: url("../img/icon-right-arrow.svg") no-repeat center;
+  }
 }
 
 @media (min-width: $screen-sm) {
@@ -139,7 +139,6 @@
     right: 71px;
 
     justify-content: space-between;
-
     width: 137px;
     margin: 0;
   }

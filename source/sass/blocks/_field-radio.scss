@@ -23,7 +23,7 @@
 @media (min-width: $screen-sm) {
   .field-radio__text {
     margin-bottom: 56px;
-    padding-left: 245px;
+    padding: 0;
 
     font-size: $font-size-m + 2;
     line-height: 0.95em;
@@ -31,15 +31,5 @@
 
   .field-radio:last-of-type .field-radio__text {
     margin-bottom: 56px;
-  }
-}
-
-@media (min-width: $screen-md) {
-  .field-radio__text {
-    margin-bottom: 56px;
-    padding-left: 194px;
-
-    font-size: $font-size-m + 2;
-    line-height: 0.95em;
   }
 }

@@ -29,10 +29,10 @@
 
 .products__item {
   background-color: $color-secondary;
-}
 
-.products__item--dark-green {
-  background-color: $color-secondary--dark;
+  &--dark-green {
+    background-color: $color-secondary--dark;
+  }
 }
 
 .products__link {

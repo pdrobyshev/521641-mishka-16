@@ -30,17 +30,17 @@
   &::placeholder {
     color: rgba(68, 68, 68, 0.3);
   }
-}
 
-.field-text__input--textarea {
-  min-height: 142px;
-  margin-top: 23px;
-  margin-bottom: 18px;
-  padding: 18px;
+  &--textarea {
+    min-height: 142px;
+    margin-top: 23px;
+    margin-bottom: 18px;
+    padding: 18px;
 
-  vertical-align: middle;
+    vertical-align: middle;
 
-  border: 2px solid $grey;
+    border: 2px solid $grey;
+  }
 }
 
 @media (min-width: $screen-sm) {
@@ -73,22 +73,14 @@
     background: $grey-lightest;
   }
 
-  .field-text__label-text--tel {
-    position: absolute;
-    top: 69px;
-    left: 51px;
-  }
-
-  .field-text__label-text--email {
+  .field-text__label-text {
     position: absolute;
     top: 20px;
     left: 51px;
-  }
 
-  .field-text__label-text--more {
-    position: absolute;
-    top: 20px;
-    left: 51px;
+    &--tel {
+      top: 69px;
+    }
   }
 
   .field-text__input--textarea {

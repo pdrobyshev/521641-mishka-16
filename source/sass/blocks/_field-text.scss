@@ -47,6 +47,10 @@
   .field-text {
     display: flex;
     margin-bottom: 24px;
+
+    &--more {
+      margin-bottom: 52px;
+    }
   }
 
   .field-text__name {
@@ -60,20 +64,13 @@
     line-height: 0.95em;
   }
 
-  .form__fieldset--tel .field-text__input {
-    margin: 0;
-
-    font-size: $font-size-m + 2;
-    line-height: 0.95em;
-    background: $background-grey;
-  }
-
+  .form__fieldset--tel .field-text__input,
   .form__fieldset--email .field-text__input {
     margin: 0;
 
     font-size: $font-size-m + 2;
     line-height: 0.95em;
-    background: $background-grey;
+    background: $grey-lightest;
   }
 
   .field-text__label-text--tel {
@@ -94,11 +91,15 @@
     left: 51px;
   }
 
-  .field-text--more {
-    margin-bottom: 52px;
-  }
-
   .field-text__input--textarea {
     margin: 0;
+  }
+}
+
+@media (min-width: $screen-md) {
+  .field-text__label-text--tel,
+  .field-text__label-text--email,
+  .field-text__label-text--more {
+    left: 112px;
   }
 }

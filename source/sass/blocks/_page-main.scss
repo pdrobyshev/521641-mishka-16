@@ -12,7 +12,7 @@
   line-height: 1.1em;
   text-align: center;
 
-  background: $background-grey;
+  background: $grey-lightest;
 }
 
 .page-main__shipping {
@@ -60,7 +60,7 @@
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: no-repeat;
     background-position: bottom;
-    background-size: 100% 23px;
+    background-size: 101% 23px;
   }
 
   .page-main__intro {

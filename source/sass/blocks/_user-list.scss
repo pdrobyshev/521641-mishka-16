@@ -6,7 +6,7 @@
 }
 
 .user-list__item {
-  box-shadow: 0 1px 0 0 $background-grey--darken, inset 0 1px 0 0 $background-grey--darken;
+  box-shadow: 0 1px 0 0 $grey-light, inset 0 1px 0 0 $grey-light;
 
   &:nth-last-child(2),
   &:last-child {

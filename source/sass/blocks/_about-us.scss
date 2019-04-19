@@ -2,7 +2,6 @@
   max-width: 320px;
   margin: 0 auto;
   margin-bottom: 31px;
-
   padding: 34px 30px;
   padding-bottom: 30px;
 }
@@ -45,59 +44,43 @@
     display: block;
   }
 
-  &--ecology {
-    max-width: 196px;
+  &--ecology::before {
+    left: 8px;
+    top: -60px;
 
-    &::before {
-      left: 8px;
-      top: -60px;
+    width: 32px;
+    height: 40px;
 
-      width: 32px;
-      height: 40px;
-
-      background: url("../img/icon-feature-flower.svg") no-repeat center;
-    }
+    background: url("../img/icon-feature-flower.svg") no-repeat center;
   }
 
-  &--style {
-    max-width: 224px;
+  &--style::before {
+    top: -58px;
 
-    &::before {
-      top: -58px;
+    width: 47px;
+    height: 30px;
 
-      width: 47px;
-      height: 30px;
-
-      background: url("../img/icon-feature-money.svg") no-repeat center;
-    }
+    background: url("../img/icon-feature-money.svg") no-repeat center;
   }
 
-  &--likes {
-    max-width: 204px;
+  &--likes::before {
+    left: 7px;
+    top: -53px;
 
-    &::before {
-      left: 7px;
-      top: -53px;
+    width: 34px;
+    height: 30px;
 
-      width: 34px;
-      height: 30px;
-
-      background: url("../img/icon-feature-heart.svg") no-repeat center;
-    }
+    background: url("../img/icon-feature-heart.svg") no-repeat center;
   }
 
-  &--handmade {
-    max-width: 250px;
+  &--handmade::before {
+    left: 3px;
+    top: -55px;
 
-    &::before {
-      left: 3px;
-      top: -55px;
+    width: 35px;
+    height: 35px;
 
-      width: 35px;
-      height: 35px;
-
-      background: url("../img/icon-feature-ball.svg") no-repeat center;
-    }
+    background: url("../img/icon-feature-ball.svg") no-repeat center;
   }
 
   &--home::before {
@@ -109,18 +92,36 @@
     background: url("../img/icon-feature-rocket.svg") no-repeat center;
   }
 
+  &--gift::before {
+    left: 3px;
+    top: -55px;
+
+    width: 33px;
+    height: 32px;
+
+    background: url("../img/icon-feature-gift.svg") no-repeat center;
+  }
+}
+
+.about-us__text {
+  &--ecology {
+    max-width: 196px;
+  }
+
+  &--style {
+    max-width: 224px;
+  }
+
+  &--likes {
+    max-width: 204px;
+  }
+
+  &--handmade {
+    max-width: 250px;
+  }
+
   &--gift {
     max-width: 250px;
-
-    &::before {
-      left: 3px;
-      top: -55px;
-
-      width: 33px;
-      height: 32px;
-
-      background: url("../img/icon-feature-gift.svg") no-repeat center;
-    }
   }
 }
 
@@ -159,33 +160,41 @@
     }
 
     &--ecology {
-      max-width: 232px;
       order: 1;
     }
 
     &--handmade {
-      max-width: 248px;
       order: 2;
     }
 
     &--style {
-      max-width: 100%;
       order: 3;
     }
 
     &--home {
-      max-width: 100%;
       order: 4;
     }
 
     &--likes {
-      max-width: 100%;
       order: 5;
     }
 
     &--gift {
-      max-width: 100%;
       order: 6;
+    }
+  }
+
+  .about-us__text {
+    &--ecology {
+      max-width: 232px;
+    }
+
+    &--style {
+      max-width: 248px;
+    }
+
+    &--likes {
+      max-width: 212px;
     }
   }
 }

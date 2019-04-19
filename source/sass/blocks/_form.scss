@@ -24,9 +24,9 @@
     background-color: $color-secondary;
   }
 
-  &:nth-child(3),
-  &:nth-child(4),
-  &:nth-child(5) {
+  &--name,
+  &--tel,
+  &--email {
     margin-bottom: 10px;
   }
 }
@@ -60,51 +60,46 @@
 
     margin-bottom: 10px;
     padding: 0 50px;
-  }
 
-  .form__fieldset--color,
-  .form__fieldset--tel,
-  .form__fieldset--email {
-    background-color: $background-grey;
-  }
+    &::before {
+      display: none;
+    }
 
-  .form__fieldset--color {
-    margin-bottom: 68px;
-    padding-top: 66px;
-    padding-bottom: 10px;
-    padding-left: 300px;
-  }
+    &--color,
+    &--tel,
+    &--email {
+      background-color: $grey-lightest;
+    }
 
-  .form__fieldset--name {
-    padding-left: 218px;
-  }
+    &--color {
+      margin-bottom: 68px;
+      padding-top: 66px;
+      padding-bottom: 10px;
+      padding-left: 300px;
+    }
 
-  .form__fieldset:nth-child(3) {
-    margin-bottom: 26px;
-  }
+    &--name {
+      margin-bottom: 26px;
+      padding-left: 218px;
+    }
 
-  .form__fieldset:nth-child(4) {
-    margin-bottom: 0;
-  }
+    &--tel {
+      margin-bottom: 0;
+      padding-top: 50px;
+      padding-right: 50px;
+      padding-left: 217px;
+    }
 
-  .form__fieldset:nth-child(5) {
-    margin-bottom: 50px;
-  }
+    &--email {
+      margin-bottom: 50px;
+      padding-left: 217px;
+      padding-bottom: 26px;
+    }
 
-  .form__fieldset--tel {
-    padding-top: 50px;
-    padding-right: 50px;
-    padding-left: 217px;
-  }
-
-  .form__fieldset--email {
-    padding-left: 217px;
-    padding-bottom: 26px;
-  }
-
-  .form__fieldset--more {
-    margin: 0;
-    padding-left: 217px;
+    &--more {
+      margin: 0;
+      padding-left: 217px;
+    }
   }
 
   .form__legend {
@@ -113,18 +108,14 @@
     left: 52px;
 
     margin: 0;
-  }
 
-  .form__legend--color {
-    top: 50px;
-  }
+    &--color {
+      top: 50px;
+    }
 
-  .form__legend--name {
-    top: 31px;
-  }
-
-  .form__fieldset::before {
-    display: none;
+    &--name {
+      top: 31px;
+    }
   }
 
   .form__button-wrapper {
@@ -155,43 +146,43 @@
 @media (min-width: $screen-md) {
   .form__fieldset {
     padding: 0 112px;
+
+    &--color {
+      margin-bottom: 50px;
+      padding-top: 66px;
+      padding-left: 306px;
+    }
+
+    &--name {
+      padding-left: 226px;
+      padding-right: 226px;
+    }
+
+    &--tel {
+      padding-top: 50px;
+      padding-left: 226px;
+      padding-right: 226px;
+    }
+
+    &--email {
+      padding-bottom: 26px;
+      padding-left: 226px;
+      padding-right: 226px;
+    }
+
+    &--more {
+      padding-left: 226px;
+      padding-right: 226px;
+    }
   }
 
   .form__legend {
     left: 112px;
-  }
 
-  .form__fieldset--color {
-    margin-bottom: 50px;
-    padding-top: 66px;
-    padding-left: 306px;
-  }
-
-  .form__legend--color {
-    top: 67px;
-    left: 112px;
-  }
-
-  .form__fieldset--name {
-    padding-left: 226px;
-    padding-right: 226px;
-  }
-
-  .form__fieldset--tel {
-    padding-top: 50px;
-    padding-left: 226px;
-    padding-right: 226px;
-  }
-
-  .form__fieldset--email {
-    padding-bottom: 26px;
-    padding-left: 226px;
-    padding-right: 226px;
-  }
-
-  .form__fieldset--more {
-    padding-left: 226px;
-    padding-right: 226px;
+    &--color {
+      top: 67px;
+      left: 112px;
+    }
   }
 
   .form__button-wrapper {

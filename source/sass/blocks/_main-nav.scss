@@ -20,7 +20,7 @@
 }
 
 .main-nav__list-item {
-  box-shadow: 0 1px 0 0 $background-grey--darken, inset 0 1px 0 0 $background-grey--darken;
+  box-shadow: 0 1px 0 0 $grey-light, inset 0 1px 0 0 $grey-light;
 }
 
 .main-nav__link {
@@ -70,16 +70,20 @@
     display: flex;
     align-items: center;
     padding: 34px 0;
+
+    &--search {
+      padding-left: 32px;
+      padding-right: 32px;
+
+      font-size: 0;
+
+      border-left: 1px solid $grey-light;
+      border-right: 1px solid $grey-light;
+    }
   }
 
-  .main-nav__link--search {
-    padding-left: 32px;
-    padding-right: 32px;
-
-    font-size: 0;
-
-    border-left: 1px solid $background-grey--darken;
-    border-right: 1px solid $background-grey--darken;
+  .main-nav__search-text {
+    display: none;
   }
 
   .main-nav__search-img {

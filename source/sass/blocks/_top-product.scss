@@ -43,7 +43,7 @@
   border-collapse: collapse;
 
   tr {
-    border-bottom: 1px solid $background-grey;
+    border-bottom: 1px solid $grey-lightest;
   }
 }
 
@@ -220,6 +220,7 @@
   }
 
   .top-product__image {
+    right: 50px;
     z-index: -1;
 
     width: 525px;

@@ -19,19 +19,19 @@
       <div class="user-nav">
         <ul class="user-list">
           <li class="user-list__item">
-            <a class="user-list__link  user-list__link--catalog" href="#">Каталог товаров</a>
+            <a class="user-list__link  user-list__link--catalog" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="user-list__item">
-            <a class="user-list__link  user-list__link--order" href="#">Вязание на заказ</a>
+            <a class="user-list__link  user-list__link--order" href="form.html">Вязание на заказ</a>
+            <ul class="user-list__sub-list">
+              <li class="user-list__item">
+                <a class="user-list__link" href="#">Новые поступления</a>
+              </li>
+              <li class="user-list__item">
+                <a class="user-list__link" href="#">Распродажа</a>
+              </li>
+            </ul>
           </li>
-          <ul class="user-list__sub-list">
-            <li class="user-list__item">
-              <a class="user-list__link" href="#">Новые поступления</a>
-            </li>
-            <li class="user-list__item">
-              <a class="user-list__link" href="#">Распродажа</a>
-            </li>
-          </ul>
         </ul>
       </div>
 
@@ -64,6 +64,7 @@
       </p>
 
       <section class="order-form">
+        <h2 class="visually-hidden">Форма заказа товара</h2>
         <form class="form" action="https://echo.htmlacademy.ru">
           <fieldset class="form__fieldset  form__fieldset--type">
             <legend class="form__legend">Тип</legend>
@@ -79,7 +80,7 @@
 
           <fieldset class="form__fieldset  form__fieldset--color">
             <legend class="form__legend form__legend--color">Цвет</legend>
-            <div class="field-checkbox__wrapper">
+            <div class="field-checkbox-wrapper">
               <label class="field-checkbox">
                 <input class="field-checkbox__input" type="checkbox" name="order-color" checked>
                 <span class="field-checkbox__text">Белый</span>

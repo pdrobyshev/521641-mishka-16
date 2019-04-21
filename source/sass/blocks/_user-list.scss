@@ -11,10 +11,6 @@
 
 .user-list__item {
   box-shadow: 0 1px 0 0 $grey-light, inset 0 1px 0 0 $grey-light;
-
-  &:last-child {
-    display: none;
-  }
 }
 
 .user-list__link {
@@ -79,11 +75,18 @@
     }
 
     &--order {
+      position: relative;
+      top: -88px;
+      left: 185px;
+
       padding-left: 35px;
     }
   }
 
   .user-list__sub-list {
+    position: relative;
+    top: -72px;
+
     display: flex;
     flex-wrap: wrap;
     margin: 0;

@@ -1,0 +1,23 @@
+.page-header {
+  position: relative;
+
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: $screen-sm) {
+  .page-header {
+    display: flex;
+    align-items: center;
+    max-width: $screen-sm;
+    padding: 0 52px;
+
+    border-bottom: 1px solid $grey-light;
+  }
+}
+
+@media (min-width: $screen-md) {
+  .page-header {
+    max-width: $screen-md;
+  }
+}

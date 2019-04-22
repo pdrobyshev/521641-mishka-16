@@ -1,0 +1,24 @@
+.user-nav__info {
+  display: none;
+}
+
+@media (min-width: $screen-sm) {
+  .user-nav {
+    position: relative;
+    z-index: 1;
+    top: 82px;
+    left: -434px;
+  }
+}
+
+@media (min-width: $screen-md) {
+  .user-nav {
+    top: auto;
+    left: auto;
+
+    order: -1;
+    max-width: 375px;
+
+    margin-right: 75px;
+  }
+}

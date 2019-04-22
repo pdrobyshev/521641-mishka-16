@@ -1,3 +1,29 @@
 .page-footer {
-  background-color: $background-main;
+  max-width: 320px;
+  margin: 0 auto;
+
+  background-color: $grey-lightest;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: $screen-sm) {
+  .page-footer {
+    max-width: $screen-sm;
+    padding: 50px;
+  }
+
+  .page-footer__logo {
+    display: flex;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: $screen-md) {
+  .page-footer {
+    max-width: $screen-md;
+    padding-bottom: 60px;
+  }
 }

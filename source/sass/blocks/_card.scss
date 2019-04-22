@@ -1,4 +1,23 @@
+.card {
+  margin-bottom: 30px;
+
+  border: 1px solid $grey-light;
+}
+
+.card__item-img {
+  display: block;
+  width: 260px;
+  height: 195px;
+}
+
+.card__info {
+  padding: 30px 28px;
+}
+
 .card__name {
+  margin: 0;
+  margin-bottom: 17px;
+
   font-weight: 700;
   font-size: $font-size-m;
   line-height: 1.411em;
@@ -6,8 +25,14 @@
 }
 
 .card__stats {
+  display: block;
+  padding-bottom: 27px;
+  margin-bottom: 27px;
+
   line-height: 2.307em;
   color: $grey;
+
+  border-bottom: 1px solid $grey-light;
 }
 
 .card__price {
@@ -15,4 +40,79 @@
   font-size: $font-size-s;
   line-height: 1.6em;
   color: $color-main;
+}
+
+@media (min-width: $screen-sm) {
+  .card {
+    margin-bottom: 54px;
+  }
+
+  .card__item-link {
+    display: flex;
+
+    picture {
+      flex-shrink: 0;
+    }
+  }
+
+  .card__item-img {
+    flex-shrink: 0;
+    width: 334px;
+    height: 334px;
+  }
+
+  .card__info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .card__name {
+    margin-bottom: 15px;
+
+    font-size: $font-size-m + 3;
+    line-height: 1.2em;
+  }
+
+  .card__stats {
+    display: flex;
+    width: 100%;
+    margin-bottom: auto;
+
+    font-size: $font-size-s;
+    line-height: 2em;
+
+    border: none;
+  }
+
+  .card__price {
+    padding-top: 27px;
+
+    font-size: $font-size-m;
+    line-height: 1.41em;
+
+    border-top: 1px solid $grey-light;
+  }
+}
+
+@media (min-width: $screen-md) {
+  .card {
+    max-width: 316px;
+    margin-bottom: 57px;
+  }
+
+  .card__item-link {
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .card__info {
+    height: 100%;
+  }
+
+  .card__item-img {
+    display: block;
+    width: 316px;
+    height: 462px;
+  }
 }

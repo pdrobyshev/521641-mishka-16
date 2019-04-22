@@ -1,11 +1,219 @@
+.about-us {
+  max-width: 320px;
+  margin: 0 auto;
+  margin-bottom: 31px;
+  padding: 34px 30px;
+  padding-bottom: 30px;
+}
+
 .about-us__title {
+  margin: 0;
+  margin-bottom: 88px;
+
   font-weight: 700;
   font-size: $font-size-l;
   line-height: 1.2em;
 }
 
+.about-us__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
 .about-us__item {
+  position: relative;
+
+  margin-bottom: 85px;
+
   font-weight: 700;
   font-size: $font-size-m;
   line-height: 1.176em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    content: "";
+    display: block;
+  }
+
+  &--ecology::before {
+    left: 8px;
+    top: -60px;
+
+    width: 32px;
+    height: 40px;
+
+    background: url("../img/icon-feature-flower.svg") no-repeat center;
+  }
+
+  &--style::before {
+    top: -58px;
+
+    width: 47px;
+    height: 30px;
+
+    background: url("../img/icon-feature-money.svg") no-repeat center;
+  }
+
+  &--likes::before {
+    left: 7px;
+    top: -53px;
+
+    width: 34px;
+    height: 30px;
+
+    background: url("../img/icon-feature-heart.svg") no-repeat center;
+  }
+
+  &--handmade::before {
+    left: 3px;
+    top: -55px;
+
+    width: 35px;
+    height: 35px;
+
+    background: url("../img/icon-feature-ball.svg") no-repeat center;
+  }
+
+  &--home::before {
+    top: -53px;
+
+    width: 55px;
+    height: 23px;
+
+    background: url("../img/icon-feature-rocket.svg") no-repeat center;
+  }
+
+  &--gift::before {
+    left: 3px;
+    top: -55px;
+
+    width: 33px;
+    height: 32px;
+
+    background: url("../img/icon-feature-gift.svg") no-repeat center;
+  }
+}
+
+.about-us__text {
+  &--ecology {
+    max-width: 196px;
+  }
+
+  &--style {
+    max-width: 224px;
+  }
+
+  &--likes {
+    max-width: 204px;
+  }
+
+  &--handmade {
+    max-width: 250px;
+  }
+
+  &--gift {
+    max-width: 250px;
+  }
+}
+
+
+@media (min-width: $screen-sm) {
+  .about-us {
+    max-width: $screen-sm;
+    margin-bottom: 0;
+    padding: 60px 52px;
+    padding-bottom: 0;
+  }
+
+  .about-us__title {
+    margin-bottom: 104px;
+
+    font-size: 43px;
+    line-height: 1.16em;
+  }
+
+  .about-us__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-us__item {
+    display: flex;
+    width: 50%;
+    margin-bottom: 112px;
+
+    font-size: $font-size-m + 3;
+    line-height: 1.1em;
+
+    &--likes,
+    &:last-child {
+      margin-bottom: 82px;
+    }
+
+    &--ecology {
+      order: 1;
+    }
+
+    &--handmade {
+      order: 2;
+    }
+
+    &--style {
+      order: 3;
+    }
+
+    &--home {
+      order: 4;
+    }
+
+    &--likes {
+      order: 5;
+    }
+
+    &--gift {
+      order: 6;
+    }
+  }
+
+  .about-us__text {
+    &--ecology {
+      max-width: 232px;
+    }
+
+    &--style {
+      max-width: 248px;
+    }
+
+    &--likes {
+      max-width: 212px;
+    }
+  }
+}
+
+@media (min-width: $screen-md) {
+  .about-us {
+    max-width: $screen-md;
+    padding: 70px 175px;
+    padding-bottom: 0;
+  }
+
+  .about-us__title {
+    margin-bottom: 101px;
+
+    font-size: 53px;
+    line-height: 1.08em;
+  }
+
+  .about-us__item {
+    width: 45%;
+  }
 }

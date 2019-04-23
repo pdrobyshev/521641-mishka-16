@@ -60,9 +60,10 @@
 
   .social__list {
     margin: 0;
-    margin-left: 159px;
+    margin-left: 128px;
     margin-right: auto;
     padding: 0;
+    padding-top: 7px;
 
     border: none;
   }
@@ -70,6 +71,7 @@
 
 @media (min-width: $screen-md) {
   .social__list {
-    margin-left: 349px;
+    margin-left: 319px;
+    padding-top: 8px;
   }
 }

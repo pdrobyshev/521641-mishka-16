@@ -129,4 +129,18 @@
   .main-nav {
     margin: 0;
   }
+
+  .main-nav__cart-img {
+    margin-right: 32px;
+  }
+
+  .main-nav__link {
+    height: 89px;
+    padding-top: 28px;
+    padding-right: 2px;
+
+    &--search {
+      padding: 32px;
+    }
+  }
 }

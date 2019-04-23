@@ -1,8 +1,8 @@
 .about-us {
   max-width: 320px;
   margin: 0 auto;
-  margin-bottom: 31px;
-  padding: 34px 30px;
+  margin-bottom: 25px;
+  padding: 27px 30px;
   padding-bottom: 30px;
 }
 
@@ -46,7 +46,7 @@
 
   &--ecology::before {
     left: 8px;
-    top: -60px;
+    top: -57px;
 
     width: 32px;
     height: 40px;
@@ -55,7 +55,7 @@
   }
 
   &--style::before {
-    top: -58px;
+    top: -56px;
 
     width: 47px;
     height: 30px;
@@ -65,7 +65,7 @@
 
   &--likes::before {
     left: 7px;
-    top: -53px;
+    top: -51px;
 
     width: 34px;
     height: 30px;
@@ -75,7 +75,7 @@
 
   &--handmade::before {
     left: 3px;
-    top: -55px;
+    top: -53px;
 
     width: 35px;
     height: 35px;
@@ -84,7 +84,8 @@
   }
 
   &--home::before {
-    top: -53px;
+    left: -6px;
+    top: -52px;
 
     width: 55px;
     height: 23px;
@@ -94,7 +95,7 @@
 
   &--gift::before {
     left: 3px;
-    top: -55px;
+    top: -54px;
 
     width: 33px;
     height: 32px;
@@ -104,6 +105,8 @@
 }
 
 .about-us__text {
+  display: block;
+
   &--ecology {
     max-width: 196px;
   }

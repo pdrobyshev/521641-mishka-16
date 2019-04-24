@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 204px;
+  max-width: 258px;
   margin: 0 auto;
   padding: 25px;
 
@@ -10,6 +10,10 @@
   list-style: none;
 
   border-bottom: 1px solid $grey-lighten;
+
+  &--catalog {
+    max-width: 204px;
+  }
 }
 
 .social__item {
@@ -78,5 +82,9 @@
   .social__list {
     margin-left: 319px;
     padding-top: 8px;
+
+    &--catalog {
+      margin-left: 346px;
+    }
   }
 }

@@ -92,8 +92,14 @@
     max-width: $screen-md;
   }
 
+  .page-main__shipping--catalog {
+    top: 16px;
+    right: 51px;
+  }
+
   .page-main__title {
-    padding-bottom: 99px;
+    padding-top: 92px;
+    padding-bottom: 121px;
 
     font-size: 53px;
     line-height: 1.08em;
@@ -104,7 +110,8 @@
   .page-main__cards {
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 128px;
+    padding-top: 110px;
+    padding-left: 49px;
   }
 
   .page-main__intro {

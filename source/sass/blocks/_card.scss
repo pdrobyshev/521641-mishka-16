@@ -114,7 +114,7 @@
 @media (min-width: $screen-md) {
   .card {
     max-width: 316px;
-    margin-bottom: 57px;
+    margin-bottom: 58px;
   }
 
   .card__item-link {
@@ -122,13 +122,44 @@
     flex-direction: column;
   }
 
-  .card__info {
-    height: 100%;
-  }
-
   .card__item-img {
     display: block;
-    width: 316px;
+    width: 314px;
     height: 462px;
+  }
+
+  .card__info {
+    height: 100%;
+    padding-top: 26px;
+  }
+
+  .card--basket .card__info {
+    padding-left: 25px;
+  }
+
+  .card--basket .card__name {
+    margin-bottom: 5px;
+  }
+
+  .card--big-basket .card__name {
+    margin-left: -2px;
+  }
+
+  .card--big-basket .card__stats {
+    margin-left: -3px;
+  }
+
+  .card--big-basket .card__price {
+    padding-top: 22px;
+    margin-left: -3px;
+  }
+
+  .card__stats {
+    padding-bottom: 14px;
+  }
+
+  .card__price {
+    padding-left: 0;
+    padding-top: 23px;
   }
 }

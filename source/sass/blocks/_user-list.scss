@@ -70,6 +70,7 @@
     line-height: 1.41em;
 
     &--catalog {
+      padding-top: 30px;
       padding-right: 35px;
       border-right: 1px solid $grey-light;
     }
@@ -85,7 +86,7 @@
 
   .user-list__sub-list {
     position: relative;
-    top: -92px;
+    top: -84px;
 
     display: flex;
     flex-wrap: wrap;
@@ -104,7 +105,7 @@
   }
 
   .user-list__sub-list .user-list__link {
-    padding: 24px 0;
+    padding: 17px 0;
 
     font-size: $font-size-s;
     line-height: 1.6em;

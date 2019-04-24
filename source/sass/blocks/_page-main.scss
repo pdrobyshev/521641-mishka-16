@@ -48,14 +48,20 @@
     font-size: $font-size-s;
     line-height: 1.6em;
     color: $grey;
+
+    &--catalog {
+      top: 17px;
+      right: 49px;
+    }
   }
 
   .page-main__title {
-    padding-top: 99px;
-    padding-bottom: 78px;
+    padding-top: 95px;
+    padding-bottom: 92px;
 
     font-size: 43px;
     line-height: 1.16em;
+    text-align: center;
 
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: no-repeat;
@@ -75,7 +81,8 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding: 79px 50px;
+    padding: 68px 50px;
+    padding-left: 51px;
     padding-bottom: 0;
   }
 }

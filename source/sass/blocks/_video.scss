@@ -97,9 +97,8 @@
       order: -1;
 
       &::before {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        top: 187px;
+        left: 282px;
 
         width: 102px;
         height: 78px;
@@ -110,18 +109,23 @@
   .video__image {
     width: 668px;
     height: 455px;
+    margin-top: -1px;
   }
 
   .video__title {
     padding: 0;
-    margin: 42px 0;
-    margin-left: 107px;
+    margin: 38px 0;
+    margin-left: 106px;
+    margin-bottom: 32px;
+
+    font-size: $font-size-m + 3;
+    line-height: 1.2em;
 
     &::before {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      left: -55px;
+      left: -65px;
 
       content: "";
       display: block;
@@ -135,6 +139,7 @@
   .video__info {
     margin: 40px;
     margin-top: 0;
+    margin-bottom: 35px;
 
     font-size: $font-size-s;
     line-height: 2em;
@@ -142,6 +147,7 @@
 
   .video__button {
     max-width: 584px;
+    margin-bottom: 45px;
   }
 }
 

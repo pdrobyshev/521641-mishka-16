@@ -81,7 +81,7 @@
   .form__fieldset {
     position: relative;
 
-    margin-bottom: 10px;
+    margin-bottom: 14px;
     padding: 0 50px;
 
     &::before {
@@ -95,14 +95,15 @@
     }
 
     &--type {
-      padding-left: 300px;
+      padding-left: 298px;
     }
 
     &--color {
-      margin-bottom: 68px;
+      margin-bottom: 36px;
       padding-top: 66px;
       padding-bottom: 10px;
       padding-left: 300px;
+      padding-right: 68px;
     }
 
     &--name {
@@ -112,7 +113,7 @@
 
     &--tel {
       margin-bottom: 0;
-      padding-top: 50px;
+      padding-top: 36px;
       padding-right: 50px;
       padding-left: 217px;
     }
@@ -120,7 +121,8 @@
     &--email {
       margin-bottom: 50px;
       padding-left: 217px;
-      padding-bottom: 26px;
+      padding-top: 10px;
+      padding-bottom: 49px;
     }
 
     &--more {
@@ -131,13 +133,14 @@
 
   .form__legend {
     position: absolute;
-    top: 0;
-    left: 52px;
+    top: 2px;
+    left: 49px;
 
     margin: 0;
 
     &--color {
-      top: 50px;
+      left: 49px;
+      top: 68px;
     }
 
     &--name {

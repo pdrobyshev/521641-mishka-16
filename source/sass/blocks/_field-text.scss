@@ -52,10 +52,31 @@
 @media (min-width: $screen-sm) {
   .field-text {
     display: flex;
-    margin-bottom: 24px;
+    margin-top: 12px;
 
     &--more {
+      margin-top: 1px;
       margin-bottom: 52px;
+    }
+
+    &--surname,
+    &--patronymic {
+      margin-top: -2px;
+    }
+  }
+
+  .field-text__input {
+    padding: 13px 14px;
+
+    font-size: $font-size-m + 2;
+    line-height: 0.95em;
+
+    &--tel {
+      padding-left: 17px;
+    }
+
+    &--email {
+      padding-left: 16px;
     }
   }
 
@@ -64,6 +85,7 @@
     align-items: center;
     min-height: 52px;
     margin: 0;
+    margin-top: -26px;
     margin-right: 26px;
 
     font-size: $font-size-m + 2;
@@ -87,10 +109,23 @@
     &--tel {
       top: 69px;
     }
+
+    &--email {
+      top: 41px;
+    }
   }
 
   .field-text__input--textarea {
     margin: 0;
+  }
+
+  .form__attention-text {
+    margin-top: -4px;
+  }
+
+  .form__button {
+    padding-top: 17px;
+    padding-bottom: 16px;
   }
 }
 

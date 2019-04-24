@@ -182,7 +182,8 @@
 
     &--color {
       margin-bottom: 50px;
-      padding-top: 66px;
+      padding-top: 64px;
+      padding-bottom: 8px;
       padding-left: 306px;
     }
 
@@ -192,13 +193,14 @@
     }
 
     &--tel {
-      padding-top: 50px;
+      padding-top: 47px;
       padding-left: 226px;
       padding-right: 226px;
     }
 
     &--email {
-      padding-bottom: 26px;
+      padding-top: 22px;
+      padding-bottom: 50px;
       padding-left: 226px;
       padding-right: 226px;
     }
@@ -210,16 +212,22 @@
   }
 
   .form__legend {
+    top: 0;
     left: 112px;
 
     &--color {
-      top: 67px;
-      left: 112px;
+      top: 65px;
+      left: 109px;
     }
   }
 
   .form__button-wrapper {
     padding-left: 226px;
     padding-right: 226px;
+  }
+
+  .form__attention-text {
+    margin-top: -5px;
+    margin-right: -3px;
   }
 }

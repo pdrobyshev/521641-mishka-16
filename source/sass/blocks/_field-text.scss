@@ -130,9 +130,37 @@
 }
 
 @media (min-width: $screen-md) {
-  .field-text__label-text--tel,
-  .field-text__label-text--email,
+  .form__legend--name {
+    top: 18px;
+    left: 109px;
+  }
+
+  .field-text {
+    margin-top: 0;
+
+    &--more {
+      margin-bottom: 49px;
+    }
+  }
+
+  .field-text__input--surname {
+    padding-top: 10px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+  }
+
+  .field-text__label-text--tel {
+    top: 66px;
+    left: 112px;
+  }
+
+  .field-text__label-text--email {
+    top: 43px;
+    left: 111px;
+  }
+
   .field-text__label-text--more {
+    top: 17px;
     left: 112px;
   }
 }

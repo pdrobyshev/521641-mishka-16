@@ -30,6 +30,11 @@
 
 @media (min-width: $screen-md) {
   .field-checkbox {
-    min-width: 30%;
+    min-width: 28%;
+  }
+
+  .field-checkbox__text {
+    font-size: $font-size-m + 2;
+    line-height: 0.95em;
   }
 }

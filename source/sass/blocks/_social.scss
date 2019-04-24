@@ -11,7 +11,8 @@
 
   border-bottom: 1px solid $grey-lighten;
 
-  &--catalog {
+  &--catalog,
+  &--form {
     max-width: 204px;
   }
 }

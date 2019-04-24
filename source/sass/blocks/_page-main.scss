@@ -13,6 +13,11 @@
   line-height: 1.1em;
 
   background: $grey-lightest;
+
+  &--form {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
 }
 
 .page-main__shipping {
@@ -21,6 +26,8 @@
 
 .page-main__intro {
   margin: 30px;
+  margin-top: 23px;
+  margin-bottom: 24px;
 
   line-height: 1.85em;
   color: $grey;

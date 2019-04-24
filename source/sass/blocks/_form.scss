@@ -14,7 +14,7 @@
   &::before {
     position: absolute;
     top: 8px;
-    left: 65px;
+    left: 62px;
 
     content: "";
     display: block;
@@ -24,21 +24,44 @@
     background-color: $color-secondary;
   }
 
-  &--name,
-  &--tel,
+  &--name {
+    margin-bottom: 5px;
+
+    &::before {
+      top: 7px;
+    }
+  }
+
+  &--tel {
+    margin-bottom: 6px;
+
+    &::before {
+      top: 9px;
+    }
+  }
+
   &--email {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 }
 
 .form__legend {
-  margin-bottom: 35px;
+  margin-bottom: 36px;
+  margin-left: -3px;
 
   font-weight: 700;
   font-size: $font-size-m;
   line-height: 0.941em;
   color: $color-secondary;
   text-transform: uppercase;
+
+  &--color {
+    margin-bottom: 37px;
+  }
+
+  &--name {
+    margin-bottom: 29px;
+  }
 }
 
 .form__attention-text {

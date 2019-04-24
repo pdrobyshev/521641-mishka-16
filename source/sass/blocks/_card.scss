@@ -11,12 +11,13 @@
 }
 
 .card__info {
-  padding: 30px 28px;
+  padding: 27px;
+  padding-bottom: 26px;
 }
 
 .card__name {
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 7px;
 
   font-weight: 700;
   font-size: $font-size-m;
@@ -26,8 +27,8 @@
 
 .card__stats {
   display: block;
-  padding-bottom: 27px;
-  margin-bottom: 27px;
+  padding-bottom: 19px;
+  margin-bottom: 21px;
 
   line-height: 2.307em;
   color: $grey;

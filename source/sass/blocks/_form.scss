@@ -159,6 +159,8 @@
   .form__button {
     order: -1;
     max-width: 230px;
+    padding-top: 17px;
+    padding-bottom: 16px;
 
     font-size: $font-size-m;
     line-height: 0.94em;
@@ -166,6 +168,7 @@
 
   .form__attention-text {
     margin: 0;
+    margin-top: -4px;
 
     font-size: $font-size-m;
     line-height: 1.76em;

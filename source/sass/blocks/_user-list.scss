@@ -72,6 +72,7 @@
     &--catalog {
       padding-top: 30px;
       padding-right: 35px;
+
       border-right: 1px solid $grey-light;
     }
 
@@ -80,6 +81,7 @@
       top: -88px;
       left: 185px;
 
+      max-width: 200px;
       padding-left: 35px;
     }
   }

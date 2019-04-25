@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: $screen-sm - 1) {
   .user-nav--closed .user-list {
     display: none;
   }

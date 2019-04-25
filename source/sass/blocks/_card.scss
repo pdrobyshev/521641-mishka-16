@@ -46,18 +46,6 @@
 @media (min-width: $screen-sm) {
   .card {
     margin-bottom: 54px;
-
-    &--basket {
-      .card__name {
-        margin-bottom: 8px;
-      }
-    }
-
-    &--big-basket {
-      .card__name {
-        max-width: 200px;
-      }
-    }
   }
 
   .card__item-link {
@@ -83,6 +71,7 @@
   }
 
   .card__name {
+    max-width: 230px;
     margin-bottom: 5px;
 
     font-size: $font-size-m + 3;
@@ -131,27 +120,7 @@
   .card__info {
     height: 100%;
     padding-top: 26px;
-  }
-
-  .card--basket .card__info {
-    padding-left: 25px;
-  }
-
-  .card--basket .card__name {
-    margin-bottom: 5px;
-  }
-
-  .card--big-basket .card__name {
-    margin-left: -2px;
-  }
-
-  .card--big-basket .card__stats {
-    margin-left: -3px;
-  }
-
-  .card--big-basket .card__price {
-    padding-top: 22px;
-    margin-left: -3px;
+    padding-left: 26px;
   }
 
   .card__stats {

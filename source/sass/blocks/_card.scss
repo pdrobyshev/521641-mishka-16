@@ -11,6 +11,8 @@
 }
 
 .card__info {
+  position: relative;
+
   padding: 27px;
   padding-bottom: 26px;
 }
@@ -41,6 +43,12 @@
   font-size: $font-size-s;
   line-height: 1.6em;
   color: $color-main;
+}
+
+.card__cart-icon {
+  position: absolute;
+  bottom: 31px;
+  right: 26px;
 }
 
 @media (min-width: $screen-sm) {
@@ -97,6 +105,10 @@
     line-height: 1.41em;
 
     border-top: 1px solid $grey-light;
+  }
+
+  .card__cart-icon {
+    right: 32px;
   }
 }
 

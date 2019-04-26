@@ -49,6 +49,12 @@
   }
 }
 
+.field-text__tel-img {
+  position: absolute;
+  top: 35px;
+  right: 8px;
+}
+
 @media (min-width: $screen-sm) {
   .field-text {
     display: flex;
@@ -118,6 +124,11 @@
   .field-text__input--textarea {
     margin: 0;
   }
+
+  .field-text__tel-img {
+    top: 60px;
+    right: 76px;
+  }
 }
 
 @media (min-width: $screen-md) {
@@ -153,5 +164,9 @@
   .field-text__label-text--more {
     top: 17px;
     left: 112px;
+  }
+
+  .field-text__tel-img {
+    right: 233px;
   }
 }

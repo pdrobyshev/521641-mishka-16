@@ -41,14 +41,25 @@
 }
 
 .products__link {
-  display: block;
+  display: flex;
+  justify-content: space-between;
   height: 103px;
-  padding: 28px 30px;
+  padding: 27px 30px;
+  padding-right: 27px;
 
   font-weight: 700;
   font-size: $font-size-m + 2;
   line-height: 1.263em;
   color: #ffffff;
+}
+
+.products__link-img {
+  align-self: center;
+
+  &--interior {
+    margin-right: 9px;
+    margin-top: 3px;
+  }
 }
 
 .products__shipping {
@@ -129,6 +140,14 @@
 
     font-size: $font-size-m + 3;
     line-height: 1.5em;
+  }
+
+  .products__link-img {
+    align-self: auto;
+
+    &--interior {
+      margin: 0;
+    }
   }
 }
 

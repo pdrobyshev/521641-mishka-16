@@ -78,11 +78,12 @@
 
     &--order {
       position: relative;
-      top: -88px;
+      top: -85px;
       left: 185px;
 
       max-width: 200px;
       padding-left: 35px;
+      padding-top: 30px;
     }
   }
 
@@ -107,7 +108,7 @@
   }
 
   .user-list__sub-list .user-list__link {
-    padding: 17px 0;
+    padding: 19px 1px;
 
     font-size: $font-size-s;
     line-height: 1.6em;

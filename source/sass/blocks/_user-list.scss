@@ -64,7 +64,7 @@
 
   .user-list .user-list__link {
     padding-top: 32px;
-    padding-bottom: 32px;
+    padding-bottom: 35px;
 
     font-size: $font-size-m;
     line-height: 1.41em;
@@ -78,7 +78,7 @@
 
     &--order {
       position: relative;
-      top: -85px;
+      top: -88px;
       left: 185px;
 
       max-width: 200px;
@@ -89,7 +89,7 @@
 
   .user-list__sub-list {
     position: relative;
-    top: -84px;
+    top: -90px;
 
     display: flex;
     flex-wrap: wrap;

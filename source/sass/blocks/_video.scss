@@ -12,7 +12,7 @@
     &::before {
       position: absolute;
       top: 37px;
-      left: 80px;
+      left: 79px;
       z-index: 1;
 
       content: "";
@@ -26,13 +26,29 @@
 }
 
 .video__title {
-  margin: 0 34px;
-  margin-top: 29px;
-  margin-bottom: 26px;
+  position: relative;
+
+  margin: 24px 34px;
+  margin-left: 89px;
+  margin-bottom: 25px;
 
   font-weight: 700;
   font-size: $font-size-m;
   line-height: 1.411em;
+
+  &::before {
+    position: absolute;
+    top: 46%;
+    transform: translateY(-50%);
+    left: -56px;
+
+    content: "";
+    display: block;
+    width: 32px;
+    height: 22px;
+
+    background: url("../img/icon-video.svg") no-repeat center;
+  }
 
   br {
     display: none;
@@ -46,9 +62,11 @@
 }
 
 .video__info {
-  margin: 34px;
-  margin-bottom: 29px;
+  margin: 33px;
+  margin-top: 28px;
+  margin-bottom: 24px;
 
+  line-height: 1.85em;
   color: $grey;
 }
 
@@ -56,7 +74,7 @@
   display: block;
   max-width: 192px;
   margin: 0 auto;
-  margin-bottom: 33px;
+  margin-bottom: 32px;
   padding-left: 16px;
   padding-right: 16px;
 
@@ -79,9 +97,8 @@
       order: -1;
 
       &::before {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        top: 187px;
+        left: 282px;
 
         width: 102px;
         height: 78px;
@@ -92,20 +109,23 @@
   .video__image {
     width: 668px;
     height: 455px;
+    margin-top: -1px;
   }
 
   .video__title {
-    position: relative;
-
     padding: 0;
-    margin: 42px 0;
-    margin-left: 107px;
+    margin: 38px 0;
+    margin-left: 106px;
+    margin-bottom: 32px;
+
+    font-size: $font-size-m + 3;
+    line-height: 1.2em;
 
     &::before {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      left: -55px;
+      left: -65px;
 
       content: "";
       display: block;
@@ -119,6 +139,7 @@
   .video__info {
     margin: 40px;
     margin-top: 0;
+    margin-bottom: 35px;
 
     font-size: $font-size-s;
     line-height: 2em;
@@ -126,6 +147,7 @@
 
   .video__button {
     max-width: 584px;
+    margin-bottom: 45px;
   }
 }
 
@@ -144,6 +166,11 @@
       position: absolute;
       top: 0;
       left: 0;
+
+      &::before {
+        top: 188px;
+        left: 290px;
+      }
     }
   }
 
@@ -156,16 +183,16 @@
     max-width: 230px;
     width: 100%;
     margin: 0;
-    margin-top: 100px;
+    margin-top: 95px;
     margin-right: 57px;
-    margin-bottom: 42px;
+    margin-bottom: 33px;
 
     br {
       display: block;
     }
 
     &::before {
-      top: -53px;
+      top: -49px;
       left: 0;
 
       transform: none;
@@ -175,8 +202,8 @@
   .video__info {
     max-width: 230px;
     width: 100%;
-    margin-right: 57px;
-    margin-bottom: 51px;
+    margin-right: 59px;
+    margin-bottom: 46px;
   }
 
   .video__button {
@@ -184,7 +211,7 @@
     margin: 0;
     margin-left: auto;
     margin-right: 57px;
-    margin-bottom: 44px;
+    margin-bottom: 59px;
     padding-top: 17px;
     padding-bottom: 16px;
 

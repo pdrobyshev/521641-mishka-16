@@ -5,14 +5,19 @@
 
 .page-main__title {
   margin: 0;
-  padding: 75px 36px;
+  padding: 76px 41px;
+  padding-top: 71px;
 
   font-weight: 700;
   font-size: $font-size-xl;
   line-height: 1.1em;
-  text-align: center;
 
   background: $grey-lightest;
+
+  &--form {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
 }
 
 .page-main__shipping {
@@ -21,6 +26,8 @@
 
 .page-main__intro {
   margin: 30px;
+  margin-top: 23px;
+  margin-bottom: 24px;
 
   line-height: 1.85em;
   color: $grey;
@@ -48,14 +55,25 @@
     font-size: $font-size-s;
     line-height: 1.6em;
     color: $grey;
+
+    &--catalog {
+      top: 17px;
+      right: 49px;
+    }
+
+    &--form {
+      top: 17px;
+      right: 50px;
+    }
   }
 
   .page-main__title {
-    padding-top: 99px;
-    padding-bottom: 78px;
+    padding-top: 95px;
+    padding-bottom: 92px;
 
     font-size: 43px;
     line-height: 1.16em;
+    text-align: center;
 
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: no-repeat;
@@ -64,8 +82,8 @@
   }
 
   .page-main__intro {
-    margin: 68px 52px;
-    margin-bottom: 80px;
+    margin: 61px 51px;
+    margin-bottom: 75px;
 
     font-size: $font-size-m;
     line-height: 1.76em;
@@ -75,7 +93,8 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding: 79px 50px;
+    padding: 68px 50px;
+    padding-left: 51px;
     padding-bottom: 0;
   }
 }
@@ -85,24 +104,33 @@
     max-width: $screen-md;
   }
 
+  .page-main__shipping--catalog {
+    top: 16px;
+    right: 51px;
+  }
+
   .page-main__title {
-    padding-bottom: 99px;
+    padding-top: 92px;
+    padding-bottom: 121px;
 
     font-size: 53px;
     line-height: 1.08em;
 
     background-size: 100% 34px;
+    background-position: 0 101%;
   }
 
   .page-main__cards {
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 128px;
+    padding-top: 110px;
+    padding-left: 49px;
   }
 
   .page-main__intro {
     max-width: 672px;
-    margin: 80px auto;
-    margin-top: 112px;
+    margin-top: 104px;
+    margin-left: 225px;
+    margin-bottom: 75px;
   }
 }

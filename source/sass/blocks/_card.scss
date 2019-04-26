@@ -11,12 +11,13 @@
 }
 
 .card__info {
-  padding: 30px 28px;
+  padding: 27px;
+  padding-bottom: 26px;
 }
 
 .card__name {
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 7px;
 
   font-weight: 700;
   font-size: $font-size-m;
@@ -26,8 +27,8 @@
 
 .card__stats {
   display: block;
-  padding-bottom: 27px;
-  margin-bottom: 27px;
+  padding-bottom: 19px;
+  margin-bottom: 21px;
 
   line-height: 2.307em;
   color: $grey;
@@ -57,18 +58,21 @@
 
   .card__item-img {
     flex-shrink: 0;
-    width: 334px;
-    height: 334px;
+    width: 332px;
+    height: 332px;
   }
 
   .card__info {
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding-top: 25px;
+    padding-left: 28px;
   }
 
   .card__name {
-    margin-bottom: 15px;
+    max-width: 230px;
+    margin-bottom: 5px;
 
     font-size: $font-size-m + 3;
     line-height: 1.2em;
@@ -86,7 +90,8 @@
   }
 
   .card__price {
-    padding-top: 27px;
+    padding-top: 23px;
+    padding-left: 5px;
 
     font-size: $font-size-m;
     line-height: 1.41em;
@@ -98,7 +103,7 @@
 @media (min-width: $screen-md) {
   .card {
     max-width: 316px;
-    margin-bottom: 57px;
+    margin-bottom: 58px;
   }
 
   .card__item-link {
@@ -106,13 +111,24 @@
     flex-direction: column;
   }
 
-  .card__info {
-    height: 100%;
-  }
-
   .card__item-img {
     display: block;
-    width: 316px;
+    width: 314px;
     height: 462px;
+  }
+
+  .card__info {
+    height: 100%;
+    padding-top: 26px;
+    padding-left: 26px;
+  }
+
+  .card__stats {
+    padding-bottom: 14px;
+  }
+
+  .card__price {
+    padding-left: 0;
+    padding-top: 23px;
   }
 }

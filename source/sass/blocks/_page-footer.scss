@@ -18,6 +18,7 @@
   .page-footer__logo {
     display: flex;
     margin-right: 0;
+    margin-bottom: 10px;
   }
 }
 
@@ -25,5 +26,9 @@
   .page-footer {
     max-width: $screen-md;
     padding-bottom: 60px;
+  }
+
+  .page-footer__logo {
+    margin-bottom: 8px;
   }
 }

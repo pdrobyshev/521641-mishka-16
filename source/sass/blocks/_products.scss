@@ -1,17 +1,17 @@
 .products {
-  background: $grey-lighter url("../img/hero-mobile@1x.jpg") no-repeat top center;
+  background: $grey-lighter url("../img/hero-mobile@1x.jpg") no-repeat center -18px;
 }
 
 .products__inner-wrapper {
   max-width: 320px;
   margin: 0 auto;
-  padding-top: 76px;
+  padding-top: 72px;
 }
 
 .products__title {
   max-width: 250px;
   margin: 0 auto;
-  margin-bottom: 120px;
+  margin-bottom: 124px;
 
   font-weight: 700;
   font-size: $font-size-xl;
@@ -37,8 +37,8 @@
 
 .products__link {
   display: block;
-  padding: 29px 30px;
-  padding-bottom: 28px;
+  height: 103px;
+  padding: 28px 30px;
 
   font-weight: 700;
   font-size: $font-size-m + 2;
@@ -62,8 +62,8 @@
     flex-direction: column;
     max-width: $screen-sm;
     min-height: 746px;
-    padding: 0 52px;
-    padding-top: 161px;
+    padding: 0 50px;
+    padding-top: 154px;
 
     &::before {
       position: absolute;
@@ -73,16 +73,17 @@
       content: "";
       display: block;
       width: 100%;
-      height: 24px;
+      height: 22px;
 
       background: url("../img/bg-zigzag-fill.svg") no-repeat top center;
+      background-size: 100%;
     }
   }
 
   .products__shipping {
     position: absolute;
-    top: 25px;
-    right: 52px;
+    top: 17px;
+    right: 50px;
 
     display: block;
 
@@ -112,8 +113,9 @@
   }
 
   .products__link {
-    padding: 30px 36px;
-    padding-bottom: 29px;
+    height: 120px;
+    padding: 28px 36px;
+    padding-bottom: 16px;
 
     font-size: $font-size-m + 3;
     line-height: 1.5em;
@@ -122,16 +124,33 @@
 
 @media (min-width: $screen-md) {
   .products {
-    background: $grey-lighter url("../img/hero-desktop@1x.jpg") no-repeat top center;
+    background: $grey-lighter url("../img/hero-desktop@1x.jpg") no-repeat center -2px;
   }
 
   .products__inner-wrapper {
     max-width: $screen-md;
     padding: 0 50px;
-    padding-top: 161px;
+    padding-top: 152px;
+
+    &::before {
+      height: 28px;
+
+      background: url("../img/bg-zigzag-fill.svg") no-repeat 0 0;
+    }
   }
 
-  .products__title br:last-child {
-    display: block;
+  .products__shipping {
+    top: 16px;
+  }
+
+  .products__title {
+    max-width: 620px;
+
+    font-size: 53px;
+    line-height: 1.08em;
+
+    br:last-child {
+      display: block;
+    }
   }
 }

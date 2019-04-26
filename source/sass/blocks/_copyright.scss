@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 28px 30px;
+  padding: 20px 30px;
   padding-bottom: 31px;
 }
 
@@ -28,5 +28,19 @@
 @media (min-width: $screen-sm) {
   .copyright {
     padding: 0;
+  }
+
+  .copyright__htmlacademy {
+    margin-top: 4px;
+  }
+}
+
+@media (min-width: $screen-md) {
+  .copyright__text {
+    margin-top: 2px;
+  }
+
+  .copyright__htmlacademy {
+    margin-top: 10px;
   }
 }

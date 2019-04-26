@@ -14,7 +14,7 @@
   &::before {
     position: absolute;
     top: 8px;
-    left: 65px;
+    left: 62px;
 
     content: "";
     display: block;
@@ -24,21 +24,44 @@
     background-color: $color-secondary;
   }
 
-  &--name,
-  &--tel,
+  &--name {
+    margin-bottom: 5px;
+
+    &::before {
+      top: 7px;
+    }
+  }
+
+  &--tel {
+    margin-bottom: 6px;
+
+    &::before {
+      top: 9px;
+    }
+  }
+
   &--email {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 }
 
 .form__legend {
-  margin-bottom: 35px;
+  margin-bottom: 36px;
+  margin-left: -3px;
 
   font-weight: 700;
   font-size: $font-size-m;
   line-height: 0.941em;
   color: $color-secondary;
   text-transform: uppercase;
+
+  &--color {
+    margin-bottom: 37px;
+  }
+
+  &--name {
+    margin-bottom: 29px;
+  }
 }
 
 .form__attention-text {
@@ -58,7 +81,7 @@
   .form__fieldset {
     position: relative;
 
-    margin-bottom: 10px;
+    margin-bottom: 14px;
     padding: 0 50px;
 
     &::before {
@@ -72,14 +95,15 @@
     }
 
     &--type {
-      padding-left: 300px;
+      padding-left: 298px;
     }
 
     &--color {
-      margin-bottom: 68px;
+      margin-bottom: 36px;
       padding-top: 66px;
       padding-bottom: 10px;
       padding-left: 300px;
+      padding-right: 68px;
     }
 
     &--name {
@@ -89,7 +113,7 @@
 
     &--tel {
       margin-bottom: 0;
-      padding-top: 50px;
+      padding-top: 36px;
       padding-right: 50px;
       padding-left: 217px;
     }
@@ -97,7 +121,8 @@
     &--email {
       margin-bottom: 50px;
       padding-left: 217px;
-      padding-bottom: 26px;
+      padding-top: 10px;
+      padding-bottom: 49px;
     }
 
     &--more {
@@ -108,13 +133,14 @@
 
   .form__legend {
     position: absolute;
-    top: 0;
-    left: 52px;
+    top: 2px;
+    left: 49px;
 
     margin: 0;
 
     &--color {
-      top: 50px;
+      left: 49px;
+      top: 68px;
     }
 
     &--name {
@@ -133,6 +159,8 @@
   .form__button {
     order: -1;
     max-width: 230px;
+    padding-top: 17px;
+    padding-bottom: 16px;
 
     font-size: $font-size-m;
     line-height: 0.94em;
@@ -140,6 +168,7 @@
 
   .form__attention-text {
     margin: 0;
+    margin-top: -4px;
 
     font-size: $font-size-m;
     line-height: 1.76em;
@@ -156,7 +185,8 @@
 
     &--color {
       margin-bottom: 50px;
-      padding-top: 66px;
+      padding-top: 64px;
+      padding-bottom: 8px;
       padding-left: 306px;
     }
 
@@ -166,13 +196,14 @@
     }
 
     &--tel {
-      padding-top: 50px;
+      padding-top: 47px;
       padding-left: 226px;
       padding-right: 226px;
     }
 
     &--email {
-      padding-bottom: 26px;
+      padding-top: 22px;
+      padding-bottom: 50px;
       padding-left: 226px;
       padding-right: 226px;
     }
@@ -184,16 +215,22 @@
   }
 
   .form__legend {
+    top: 0;
     left: 112px;
 
     &--color {
-      top: 67px;
-      left: 112px;
+      top: 65px;
+      left: 109px;
     }
   }
 
   .form__button-wrapper {
     padding-left: 226px;
     padding-right: 226px;
+  }
+
+  .form__attention-text {
+    margin-top: -5px;
+    margin-right: -3px;
   }
 }

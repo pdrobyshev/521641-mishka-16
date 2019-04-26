@@ -1,23 +1,36 @@
 .social__list {
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
-  max-width: 260px;
+  max-width: 258px;
   margin: 0 auto;
-  padding: 26px;
+  padding: 25px;
 
   font-size: 0;
   list-style: none;
 
   border-bottom: 1px solid $grey-lighten;
+
+  &--catalog,
+  &--form {
+    max-width: 204px;
+  }
 }
 
 .social__item {
-  margin-right: 40px;
+  margin-right: 29px;
 
   &:last-child {
     margin-right: 0;
+  }
+
+  &--insta {
+    margin-left: 26px;
+    margin-right: 30px;
+  }
+
+  &--fb {
+    margin-right: 28px;
   }
 }
 
@@ -52,16 +65,31 @@
 
   .social__list {
     margin: 0;
-    margin-left: 159px;
+    margin-left: 128px;
     margin-right: auto;
     padding: 0;
 
     border: none;
+
+    &--catalog {
+      margin-left: 156px;
+      padding-top: 8px;
+    }
+
+    &--form {
+      margin-left: 156px;
+      padding-top: 9px;
+    }
   }
 }
 
 @media (min-width: $screen-md) {
   .social__list {
-    margin-left: 349px;
+    margin-left: 319px;
+
+    &--catalog,
+    &--form {
+      margin-left: 346px;
+    }
   }
 }

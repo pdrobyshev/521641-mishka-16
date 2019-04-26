@@ -63,14 +63,16 @@
   }
 
   .user-list .user-list__link {
-    padding-top: 33px;
+    padding-top: 32px;
     padding-bottom: 32px;
 
     font-size: $font-size-m;
     line-height: 1.41em;
 
     &--catalog {
+      padding-top: 30px;
       padding-right: 35px;
+
       border-right: 1px solid $grey-light;
     }
 
@@ -79,13 +81,14 @@
       top: -88px;
       left: 185px;
 
+      max-width: 200px;
       padding-left: 35px;
     }
   }
 
   .user-list__sub-list {
     position: relative;
-    top: -72px;
+    top: -84px;
 
     display: flex;
     flex-wrap: wrap;
@@ -104,7 +107,7 @@
   }
 
   .user-list__sub-list .user-list__link {
-    padding: 24px 0;
+    padding: 17px 0;
 
     font-size: $font-size-s;
     line-height: 1.6em;

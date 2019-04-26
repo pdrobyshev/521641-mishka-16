@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="logo  page-header__logo">
+      <a class="logo  page-header__logo" href="index.html">
         <picture>
           <source srcset="img/logo-desktop.svg" media="(min-width: 1150px)">
           <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
@@ -16,7 +16,7 @@
         </picture>
       </a>
 
-      <div class="user-nav">
+      <div class="user-nav  user-nav--closed  user-nav--nojs">
         <ul class="user-list">
           <li class="user-list__item">
             <a class="user-list__link  user-list__link--catalog" href="catalog.html">Каталог товаров</a>
@@ -35,7 +35,7 @@
         </ul>
       </div>
 
-      <nav class="main-nav">
+      <nav class="main-nav  main-nav--closed  main-nav--nojs">
         <button class="main-nav__toggle">Открыть меню</button>
         <ul class="main-nav__list">
           <li class="main-nav__list-item">
@@ -57,7 +57,7 @@
     <main class="page-main">
       <h1 class="page-main__title">Каталог товаров</h1>
 
-      <span class="page-main__shipping">Бесплатная доставка по России</span>
+      <span class="page-main__shipping  page-main__shipping--catalog">Бесплатная доставка по России</span>
 
       <div class="cards  page-main__cards">
         <article class="card">
@@ -123,33 +123,33 @@
     <footer class="page-footer">
       <div class="social  page-footer__social">
         <a class="logo  page-footer__logo">
-          <img src="img/logo-footer.svg" alt="Логотип магазина вязаных игрушек Mishka" width="102" height="34">
+          <img class="logo__footer-img" src="img/logo-footer.svg" alt="Логотип магазина вязаных игрушек Mishka" width="102" height="34">
         </a>
 
         <ul class="social__list">
-          <li class="social__item">
+          <li class="social__item  social__item--insta">
             <a class="social__link" href="#">
               Инстаграмм
-              <img src="img/icon-insta.svg" alt="Мы в инстаграмме" width="21" height="22">
+              <img class="social__insta" src="img/icon-insta.svg" alt="Мы в инстаграмме" width="21" height="22">
             </a>
           </li>
-          <li class="social__item">
+          <li class="social__item  social__item--fb">
             <a class="social__link" href="#">
               Фейсбук
-              <img src="img/icon-fb.svg" alt="Мы в фейсбуке" width="15" height="28">
+              <img class="social__fb" src="img/icon-fb.svg" alt="Мы в фейсбуке" width="15" height="28">
             </a>
           </li>
-          <li class="social__item">
+          <li class="social__item  social__item--twitter">
             <a class="social__link" href="#">
               Твиттер
-              <img src="img/icon-twitter.svg" alt="Мы в твиттере" width="23" height="20">
+              <img class="social__twitter" src="img/icon-twitter.svg" alt="Мы в твиттере" width="23" height="20">
             </a>
           </li>
         </ul>
 
         <div class="copyright">
           <span class="copyright__text">Разработано</span>
-          <a class="copyright__htmlacademy" href="#">
+          <a class="copyright__htmlacademy" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
             <img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy" width="27" height="34">
           </a>
         </div>
@@ -177,5 +177,7 @@
         <button class="modal-basket__add  button">Добавить</button>
       </form>
     </section>
+
+    <script src="js/menu.js"></script>
   </body>
 </html>

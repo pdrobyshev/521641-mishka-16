@@ -1,14 +1,14 @@
 .about-us {
   max-width: 320px;
   margin: 0 auto;
-  margin-bottom: 31px;
-  padding: 34px 30px;
+  margin-bottom: 26px;
+  padding: 27px 30px;
   padding-bottom: 30px;
 }
 
 .about-us__title {
   margin: 0;
-  margin-bottom: 88px;
+  margin-bottom: 87px;
 
   font-weight: 700;
   font-size: $font-size-l;
@@ -46,7 +46,7 @@
 
   &--ecology::before {
     left: 8px;
-    top: -60px;
+    top: -57px;
 
     width: 32px;
     height: 40px;
@@ -55,7 +55,7 @@
   }
 
   &--style::before {
-    top: -58px;
+    top: -56px;
 
     width: 47px;
     height: 30px;
@@ -65,7 +65,7 @@
 
   &--likes::before {
     left: 7px;
-    top: -53px;
+    top: -51px;
 
     width: 34px;
     height: 30px;
@@ -75,7 +75,7 @@
 
   &--handmade::before {
     left: 3px;
-    top: -55px;
+    top: -53px;
 
     width: 35px;
     height: 35px;
@@ -84,7 +84,8 @@
   }
 
   &--home::before {
-    top: -53px;
+    left: -6px;
+    top: -52px;
 
     width: 55px;
     height: 23px;
@@ -94,7 +95,7 @@
 
   &--gift::before {
     left: 3px;
-    top: -55px;
+    top: -54px;
 
     width: 33px;
     height: 32px;
@@ -104,6 +105,8 @@
 }
 
 .about-us__text {
+  display: block;
+
   &--ecology {
     max-width: 196px;
   }
@@ -130,12 +133,12 @@
   .about-us {
     max-width: $screen-sm;
     margin-bottom: 0;
-    padding: 60px 52px;
-    padding-bottom: 0;
+    padding: 50px;
   }
 
   .about-us__title {
     margin-bottom: 104px;
+    margin-left: -5px;
 
     font-size: 43px;
     line-height: 1.16em;
@@ -202,7 +205,8 @@
 @media (min-width: $screen-md) {
   .about-us {
     max-width: $screen-md;
-    padding: 70px 175px;
+    padding: 60px 223px;
+    padding-right: 147px;
     padding-bottom: 0;
   }
 
@@ -215,5 +219,35 @@
 
   .about-us__item {
     width: 45%;
+
+    &--ecology::before {
+      left: 11px;
+      top: -55px;
+    }
+
+    &--style::before {
+      left: 3px;
+      top: -54px;
+    }
+
+    &--likes::before {
+      left: 11px;
+      top: -50px;
+    }
+
+    &--handmade::before {
+      left: 4px;
+      top: -50px;
+    }
+
+    &--home::before {
+      left: -5px;
+      top: -50px;
+    }
+
+    &--gift::before {
+      left: 4px;
+      top: -53px;
+    }
   }
 }

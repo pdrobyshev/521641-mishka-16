@@ -42,6 +42,20 @@
 
   &--email {
     margin-bottom: 8px;
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 4px;
+
+      content: "";
+      display: block;
+      width: 32px;
+      height: 22px;
+
+      background: url("../img/icon-mail.svg") no-repeat center;
+    }
   }
 }
 
@@ -99,7 +113,7 @@
     }
 
     &--color {
-      margin-bottom: 36px;
+      margin-bottom: 39px;
       padding-top: 66px;
       padding-bottom: 10px;
       padding-left: 300px;
@@ -123,6 +137,12 @@
       padding-left: 217px;
       padding-top: 10px;
       padding-bottom: 49px;
+
+      &::after {
+        transform: none;
+        top: 40px;
+        right: 72px;
+      }
     }
 
     &--more {
@@ -206,6 +226,10 @@
       padding-bottom: 50px;
       padding-left: 226px;
       padding-right: 226px;
+
+      &::after {
+        right: 230px;
+      }
     }
 
     &--more {

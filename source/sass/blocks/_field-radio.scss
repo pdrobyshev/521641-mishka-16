@@ -1,5 +1,6 @@
 .field-radio {
   display: block;
+  margin-bottom: 25px;
 }
 
 .field-radio__input {
@@ -10,7 +11,6 @@
   position: relative;
 
   display: block;
-  margin-bottom: 25px;
   padding-left: 62px;
 
   font-weight: 700;
@@ -58,16 +58,20 @@
 }
 
 @media (min-width: $screen-sm) {
-  .field-radio__text {
+  .field-radio {
     margin-bottom: 56px;
+  }
+
+  .field-radio__text {
     padding: 0;
+    padding-left: 100px;
 
     font-size: $font-size-m + 2;
     line-height: 0.95em;
 
     &::before {
       top: -16px;
-      left: -81px;
+      left: 20px;
 
       width: 52px;
       height: 53px;
@@ -75,7 +79,7 @@
 
     &::after {
       top: -1px;
-      left: -66px;
+      left: 35px;
 
       width: 22px;
       height: 22px;

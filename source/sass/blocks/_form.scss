@@ -80,7 +80,7 @@
 
 .form__attention-text {
   margin: 0;
-  margin-bottom: 31px;
+  margin-bottom: 32px;
 
   font-size: $font-size + 1;
   line-height: 1.142em;
@@ -109,14 +109,15 @@
     }
 
     &--type {
-      padding-left: 298px;
+      margin-left: 198px;
+      padding: 0;
     }
 
     &--color {
-      margin-bottom: 39px;
+      margin-bottom: 37px;
       padding-top: 66px;
       padding-bottom: 10px;
-      padding-left: 300px;
+      padding-left: 0;
       padding-right: 68px;
     }
 
@@ -154,7 +155,7 @@
   .form__legend {
     position: absolute;
     top: 2px;
-    left: 49px;
+    left: -148px;
 
     margin: 0;
 
@@ -200,14 +201,16 @@
     padding: 0 112px;
 
     &--type {
-      padding-left: 306px;
+      margin-left: 206px;
+      padding-left: 0;
+      padding-top: 36px;
     }
 
     &--color {
       margin-bottom: 50px;
       padding-top: 64px;
-      padding-bottom: 8px;
-      padding-left: 306px;
+      padding-bottom: 5px;
+      padding-left: 0;
     }
 
     &--name {
@@ -239,11 +242,11 @@
   }
 
   .form__legend {
-    top: 0;
-    left: 112px;
+    top: 38px;
+    left: -93px;
 
     &--color {
-      top: 65px;
+      top: 66px;
       left: 109px;
     }
   }

@@ -24,6 +24,14 @@
       display: flex;
       flex-shrink: 0;
     }
+
+    &:hover .logo__img {
+      opacity: 0.6;
+    }
+
+    &:active .logo__img {
+      opacity: 0.3;
+    }
   }
 
   .logo__img {

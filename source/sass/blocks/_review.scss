@@ -69,6 +69,15 @@
   font-size: 0;
   border: 1px solid $grey-light;
   background-color: transparent;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &--prev {
     background: url("../img/icon-left-arrow.svg") no-repeat center;

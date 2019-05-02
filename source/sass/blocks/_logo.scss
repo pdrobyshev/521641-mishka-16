@@ -42,6 +42,16 @@
   .logo__footer-img {
     width: 102px;
     height: 34px;
+
+    transition: fill 0.2s ease, opacity 0.2s ease;
+
+    &:hover {
+      fill: $color-secondary--darken;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 

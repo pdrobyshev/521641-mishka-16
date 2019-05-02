@@ -24,6 +24,8 @@
 
     content: "";
     display: block;
+
+    transition: border-color 0.2s ease, opacity 0.2s ease;
   }
 
   &::before {
@@ -34,6 +36,15 @@
 
     border: 2px solid $grey;
     border-radius: 50%;
+  }
+
+  &:hover::before {
+    border-color: $color-secondary;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+    border-color: $grey;
   }
 
   &::after {

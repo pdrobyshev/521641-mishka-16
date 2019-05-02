@@ -36,23 +36,31 @@
   background-color: $color-secondary;
 
   &:hover {
-    background-color: $color-secondary--light;
+    background-color: $color-secondary--lighten;
 
     .products__link-img {
       opacity: 0.7;
     }
   }
 
-  &:active .products__link-img {
-    opacity: 0.3;
+  &--interior:hover {
+    height: 125px;
+    margin-top: -5px;
   }
 
   &--dark-green {
     background-color: $color-secondary--dark;
 
     &:hover {
+      height: 125px;
+      margin-top: -5px;
+
       background-color: $color-secondary--darken;
     }
+  }
+
+  &:active .products__link-img {
+    opacity: 0.3;
   }
 }
 
@@ -155,12 +163,6 @@
 
   .products__item {
     width: 100%;
-
-    &--interior:hover,
-    &--dark-green:hover {
-      height: 125px;
-      margin-top: -5px;
-    }
   }
 
   .products__link {

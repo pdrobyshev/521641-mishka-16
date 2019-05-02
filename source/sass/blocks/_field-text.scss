@@ -24,9 +24,20 @@
   font: inherit;
   font-size: $font-size-m;
   line-height: 1.058em;
+  color: $grey;
 
   border: none;
   border-bottom: 2px solid $color-main;
+
+  transition: border-color 0.2s ease;
+
+  &:hover {
+    border-color: $color-secondary--light;
+  }
+
+  &:active {
+    border-color: $color-secondary--light;
+  }
 
   &::placeholder {
     color: rgba(68, 68, 68, 0.3);
@@ -35,6 +46,16 @@
   &--tel {
     font-size: $font-size-m + 2;
     line-height: 0.95em;
+
+    &:hover + .field-text__tel-img {
+      opacity: 1;
+      fill: $color-secondary--light;
+    }
+  }
+
+  &--email:hover + .field-text__email-img {
+    opacity: 1;
+    fill: $color-secondary--light;
   }
 
   &--textarea {
@@ -55,6 +76,20 @@
   position: absolute;
   top: 35px;
   right: 8px;
+
+  opacity: 0.2;
+
+  transition: fill 0.2s ease, opacity 0.2s ease;
+}
+
+.field-text__email-img {
+  position: absolute;
+  top: 34px;
+  right: 4px;
+
+  opacity: 0.2;
+
+  transition: fill 0.2s ease, opacity 0.2s ease;
 }
 
 @media (min-width: $screen-sm) {
@@ -131,6 +166,10 @@
     top: 60px;
     right: 76px;
   }
+
+  .field-text__email-img {
+    right: 72px;
+  }
 }
 
 @media (min-width: $screen-md) {
@@ -175,5 +214,10 @@
 
   .field-text__tel-img {
     right: 233px;
+  }
+
+  .field-text__email-img {
+    top: 35px;
+    right: 229px;
   }
 }

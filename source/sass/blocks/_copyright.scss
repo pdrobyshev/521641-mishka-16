@@ -4,6 +4,16 @@
   justify-content: center;
   padding: 20px 30px;
   padding-bottom: 31px;
+
+  transition: opacity 0.2s ease;
+
+  &:hover .copyright__htmlacademy {
+    fill: $color-secondary--darken;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {
@@ -17,6 +27,10 @@
 
 .copyright__htmlacademy {
   flex-shrink: 0;
+
+  fill: $color-secondary;
+
+  transition: fill 0.2s ease;
 
   img {
     display: block;

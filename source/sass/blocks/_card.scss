@@ -25,6 +25,7 @@
   font-size: $font-size-m;
   line-height: 1.411em;
   color: $color-main;
+  transition: color 0.15s ease;
 }
 
 .card__stats {
@@ -49,6 +50,9 @@
   position: absolute;
   bottom: 31px;
   right: 26px;
+
+  opacity: 0.2;
+  transition: fill 0.15s ease, opacity 0.15s ease;
 }
 
 @media (min-width: $screen-sm) {
@@ -58,6 +62,33 @@
 
   .card__item-link {
     display: flex;
+
+    transition: box-shadow 0.15s ease;
+
+    &:hover {
+      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+
+      .card__name {
+        color: rgba(0, 0, 0, 0.6);
+      }
+
+      .card__cart-icon {
+        opacity: 1;
+        fill: $color-secondary;
+      }
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+
+      .card__name {
+        color: rgba(0, 0, 0, 0.3);
+      }
+
+      .card__cart-icon {
+        opacity: 0.3;
+      }
+    }
 
     picture {
       flex-shrink: 0;

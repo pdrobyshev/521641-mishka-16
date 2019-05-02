@@ -1,18 +1,97 @@
 .modal-basket__title {
+  margin: 0;
+  margin-bottom: 25px;
+
   font-weight: 700;
   font-size: $font-size-l;
   line-height: 1.2em;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .modal-basket__size {
+  display: block;
+  margin-bottom: 28px;
+
   font-size: $font-size-s;
   line-height: 2em;
   color: $grey;
+  text-align: center;
+}
+
+.modal-basket__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.modal-basket__input {
+  display: none;
+
+  &:checked + .modal-basket__size-tag {
+    border-color: $color-secondary;
+  }
 }
 
 .modal-basket__size-tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 82px;
+  height: 52px;
+
+  border: 2px solid rgba(68, 68, 68, 0.1);
+
   font-weight: 700;
   font-size: $font-size-m;
   line-height: 0.941em;
   color: $grey;
+
+  transition: border-color 0.2s ease;
+
+  &:hover {
+    border-color: rgba(68, 68, 68, 0.3);
+  }
+
+  &:active {
+    border-color: $color-secondary--light;
+  }
+}
+
+.modal-basket__add {
+  padding: 19px 20px;
+  padding-bottom: 18px;
+
+  font-size: $font-size-m;
+  line-height: 0.94em;
+  color: #ffffff;
+
+  background-color: $color-secondary;
+  border: none;
+
+  &:hover {
+    color: #ffffff;
+    background-color: $color-secondary;
+  }
+}
+
+@media (min-width: $screen-sm) {
+  .modal-basket__title {
+    margin-bottom: 32px;
+
+    font-size: $font-size-xl + 3;
+    line-height: 1.9em;
+  }
+
+  .modal-basket__size {
+    margin-bottom: 26px;
+
+    font-size: $font-size-m;
+    line-height: 1.76em;
+  }
+
+  .modal-basket__size-tag {
+    width: 112px;
+  }
 }

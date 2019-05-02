@@ -1,3 +1,39 @@
 .modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+
   display: none;
+  max-width: 566px;
+  width: 100%;
+  padding: 36px 29px;
+  padding-bottom: 46px;
+
+  background-color: #ffffff;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+}
+
+.modal-overlay::before {
+  position: absolute;
+  z-index: 2;
+
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.modal-show {
+  display: block;
+}
+
+@media (min-width: $screen-sm) {
+  .modal {
+    padding: 50px 105px;
+    padding-bottom: 46px;
+  }
 }

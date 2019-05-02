@@ -35,8 +35,16 @@
 .products__item {
   background-color: $color-secondary;
 
+  &:hover {
+    background-color: $color-secondary--light;
+  }
+
   &--dark-green {
     background-color: $color-secondary--dark;
+
+    &:hover {
+      background-color: $color-secondary--darken;
+    }
   }
 }
 
@@ -51,6 +59,10 @@
   font-size: $font-size-m + 2;
   line-height: 1.263em;
   color: #ffffff;
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .products__link-img {

@@ -19,9 +19,11 @@
     "gulp-sourcemaps": "2.6.x",
     "gulp-svgstore": "^7.0.1",
     "gulp-webp": "^4.0.1",
+    "picturefill": "^3.0.3",
     "posthtml-include": "^1.2.0",
     "stylelint": "9.10.x",
-    "stylelint-config-htmlacademy": "0.1.x"
+    "stylelint-config-htmlacademy": "0.1.x",
+    "svg4everybody": "^2.1.9"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",

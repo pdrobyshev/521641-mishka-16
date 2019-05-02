@@ -42,24 +42,6 @@
 
   &--email {
     margin-bottom: 8px;
-
-    //&::after {
-    //  position: absolute;
-    //  top: 50%;
-    //  transform: translateY(-50%);
-    //  right: 4px;
-    //
-    //  content: "";
-    //  display: block;
-    //  width: 32px;
-    //  height: 22px;
-    //
-    //  background: url("../img/icon-mail.svg") no-repeat center;
-    //
-    //  opacity: 0.2;
-    //
-    //  transition: fill 0.2s ease, opacity 0.2s ease;
-    //}
   }
 }
 
@@ -142,12 +124,6 @@
       padding-left: 217px;
       padding-top: 10px;
       padding-bottom: 49px;
-
-      &::after {
-        transform: none;
-        top: 40px;
-        right: 72px;
-      }
     }
 
     &--more {
@@ -159,7 +135,7 @@
   .form__legend {
     position: absolute;
     top: 2px;
-    left: -148px;
+    left: -149px;
 
     margin: 0;
 
@@ -170,6 +146,7 @@
 
     &--name {
       top: 31px;
+      left: 49px;
     }
   }
 
@@ -233,10 +210,6 @@
       padding-bottom: 50px;
       padding-left: 226px;
       padding-right: 226px;
-
-      &::after {
-        right: 230px;
-      }
     }
 
     &--more {

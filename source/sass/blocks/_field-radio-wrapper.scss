@@ -1,0 +1,20 @@
+.field-radio-wrapper {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: -43px;
+    left: 62px;
+    content: "";
+    display: block;
+    width: 198px;
+    height: 1px;
+    background-color: #63d1bb;
+  }
+}
+
+@media (min-width: $screen-sm) {
+  .field-radio-wrapper::before {
+    display: none;
+  }
+}

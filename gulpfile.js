@@ -104,7 +104,7 @@ gulp.task("copy-html", function () {
       .pipe(gulp.dest("build"))
 });
 
-gulp.task("build", gulp.series(
+gulp.task("dev-build", gulp.series(
     "clean",
     "copy",
     "copy-js-libs",
@@ -113,7 +113,7 @@ gulp.task("build", gulp.series(
     "copy-html"
 ));
 
-gulp.task("prod-build", gulp.series(
+gulp.task("build", gulp.series(
     "clean",
     "convert-to-webp",
     "copy",

@@ -24,11 +24,16 @@
     background-color: $color-secondary;
   }
 
+  &--type::before,
+  &--color::before {
+    display: none;
+  }
+
   &--name {
     margin-bottom: 5px;
 
     &::before {
-      top: 7px;
+      display: none;
     }
   }
 
@@ -42,6 +47,11 @@
 
   &--email {
     margin-bottom: 8px;
+
+    &::before {
+      left: 82px;
+      width: 178px;
+    }
   }
 }
 

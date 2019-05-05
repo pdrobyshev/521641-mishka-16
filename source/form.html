@@ -72,14 +72,16 @@
         <form class="form" action="https://echo.htmlacademy.ru">
           <fieldset class="form__fieldset  form__fieldset--type">
             <legend class="form__legend">Тип</legend>
-            <label class="field-radio">
-              <input class="field-radio__input" type="radio" name="order-type" checked>
-              <span class="field-radio__text">Аксессуар для интерьера</span>
-            </label>
-            <label class="field-radio">
-              <input class="field-radio__input" type="radio" name="order-type">
-              <span class="field-radio__text">Детская игрушка</span>
-            </label>
+            <div class="field-radio-wrapper">
+              <label class="field-radio">
+                <input class="field-radio__input" type="radio" name="order-type" checked>
+                <span class="field-radio__text">Аксессуар для интерьера</span>
+              </label>
+              <label class="field-radio">
+                <input class="field-radio__input" type="radio" name="order-type">
+                <span class="field-radio__text">Детская игрушка</span>
+              </label>
+            </div>
           </fieldset>
 
           <fieldset class="form__fieldset  form__fieldset--color">
@@ -114,18 +116,20 @@
 
           <fieldset class="form__fieldset  form__fieldset--name">
             <legend class="form__legend form__legend--name">ФИО</legend>
-            <label class="field-text">
-              <span class="field-text__name">Имя:</span>
-              <input class="field-text__input" type="text" name="order-name" placeholder="Введите ваше имя*" required>
-            </label>
-            <label class="field-text  field-text--surname">
-              <span class="field-text__name">Фамилия:</span>
-              <input class="field-text__input  field-text__input--surname" type="text" name="order-surname" placeholder="Укажите фамилию*" required>
-            </label>
-            <label class="field-text  field-text--patronymic">
-              <span class="field-text__name">Отчество:</span>
-              <input class="field-text__input" type="text" name="order-patronymic" placeholder="Отчество, если желаете">
-            </label>
+            <div class="field-text-wrapper">
+              <label class="field-text">
+                <span class="field-text__name">Имя:</span>
+                <input class="field-text__input" type="text" name="order-name" placeholder="Введите ваше имя*" required>
+              </label>
+              <label class="field-text  field-text--surname">
+                <span class="field-text__name">Фамилия:</span>
+                <input class="field-text__input  field-text__input--surname" type="text" name="order-surname" placeholder="Укажите фамилию*" required>
+              </label>
+              <label class="field-text  field-text--patronymic">
+                <span class="field-text__name">Отчество:</span>
+                <input class="field-text__input" type="text" name="order-patronymic" placeholder="Отчество, если желаете">
+              </label>
+            </div>
           </fieldset>
 
           <fieldset class="form__fieldset  form__fieldset--tel">

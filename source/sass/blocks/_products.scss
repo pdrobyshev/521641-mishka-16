@@ -51,10 +51,17 @@
   font-size: $font-size-m + 2;
   line-height: 1.263em;
   color: #ffffff;
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .products__link-img {
   align-self: center;
+
+  fill: #149080;
+  opacity: 0.5;
 
   &--interior {
     margin-right: 9px;
@@ -114,8 +121,9 @@
   }
 
   .products__title {
+    align-self: center;   //ie11 fix
     max-width: 500px;
-    margin-bottom: auto;
+    margin-bottom: 374px; //ie11 fix
 
     font-size: 43px;
     line-height: 1.16em;
@@ -131,6 +139,30 @@
 
   .products__item {
     width: 100%;
+
+    &:hover {
+      background-color: $color-secondary--lighten;
+
+      .products__link-img {
+        opacity: 0.7;
+      }
+    }
+
+    &--interior:hover {
+      height: 125px;
+      margin-top: -5px;
+    }
+
+    &--dark-green:hover {
+      height: 125px;
+      margin-top: -5px;
+
+      background-color: $color-secondary--darken;
+    }
+
+    &:active .products__link-img {
+      opacity: 0.3;
+    }
   }
 
   .products__link {

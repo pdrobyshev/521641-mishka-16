@@ -24,23 +24,42 @@
       display: flex;
       flex-shrink: 0;
     }
+
+    &:hover .logo__img {
+      opacity: 0.6;
+    }
+
+    &:active .logo__img {
+      opacity: 0.3;
+    }
   }
 
   .logo__img {
     width: 112px;
     height: 46px;
+
+    transition: opacity 0.2s ease;
   }
 
   .logo__footer-img {
     width: 102px;
     height: 34px;
+
+    transition: fill 0.2s ease, opacity 0.2s ease;
+
+    &:hover {
+      fill: $color-secondary--darken;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
 @media (min-width: $screen-md) {
   .logo {
-    margin: 0;
-    margin-right: auto;
+    margin-right: 100px;
   }
 
   .logo__img {

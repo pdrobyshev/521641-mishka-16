@@ -43,6 +43,31 @@
   font-size: $font-size-m;
   line-height: 1.411em;
   color: $color-main;
+
+  &--search:hover .main-nav__search-img {
+    fill: $color-secondary;
+    opacity: 1;
+    transition: all 0.2s ease;
+  }
+
+  &--search:active .main-nav__search-img {
+    opacity: 0.3;
+  }
+
+  &--cart:hover {
+    color: rgba(0, 0, 0, 0.6);
+    transition: all 0.2s ease;
+
+    .main-nav__cart-img {
+      opacity: 1;
+      fill: $color-secondary;
+      transition: all 0.2s ease;
+    }
+  }
+
+  &--cart:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__search-img,
@@ -51,6 +76,8 @@
   top: 50%;
   transform: translateY(-50%);
   left: 32px;
+
+  opacity: 0.2;
 }
 
 @media (max-width: $screen-sm - 1) {

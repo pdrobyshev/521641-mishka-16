@@ -1,4 +1,5 @@
 .page-main {
+  display: block;   //ie11 fix
   max-width: 320px;
   margin: 0 auto;
 }
@@ -131,6 +132,6 @@
     max-width: 672px;
     margin-top: 104px;
     margin-left: 225px;
-    margin-bottom: 75px;
+    margin-bottom: 40px;
   }
 }

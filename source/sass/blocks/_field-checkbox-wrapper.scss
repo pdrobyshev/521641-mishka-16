@@ -3,5 +3,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    max-width: 500px;
+    margin-left: 206px;
+  }
+}
+
+@media (min-width: $screen-md) {
+  .field-checkbox-wrapper {
+    max-width: 750px;
+    margin-left: 206px;
   }
 }

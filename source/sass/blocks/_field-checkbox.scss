@@ -28,10 +28,21 @@
     display: block;
     width: 40px;
     height: 39px;
+
+    transition: border-color 0.2s ease, opacity 0.2s ease;
   }
 
   &::before {
     border: 2px solid $grey;
+  }
+
+  &:hover::before {
+    border-color: $color-secondary--light;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+    border-color: $grey;
   }
 
   &::after {
@@ -54,18 +65,22 @@
 
 @media (min-width: $screen-sm) {
   .field-checkbox {
-    min-width: 35%;
-    margin-bottom: 58px;
+    max-width: 232px;
+    width: 100%;
+    margin-bottom: 59px;
+    padding-left: 93px;
   }
 
   .field-checkbox__text {
     margin: 0;
     padding: 0;
 
+    word-break: break-word;
+
     &::before {
       transform: none;
       top: -15px;
-      left: -83px;
+      left: -80px;
 
       width: 54px;
       height: 52px;
@@ -74,7 +89,7 @@
     &::after {
       transform: none;
       top: 0;
-      left: -71px;
+      left: -69px;
 
       width: 33px;
       height: 22px;
@@ -84,7 +99,8 @@
 
 @media (min-width: $screen-md) {
   .field-checkbox {
-    min-width: 28%;
+    max-width: 224px;
+    padding-left: 100px;
   }
 
   .field-checkbox__text {

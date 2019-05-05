@@ -6,6 +6,8 @@
 .video__wrapper {
   border: 1px solid $grey-light;
 
+  transition: box-shadow 0.15s ease;
+
   picture {
     position: relative;
 
@@ -21,7 +23,25 @@
       height: 77px;
 
       background: url("../img/icon-play.svg") no-repeat center;
+
+      transition: transform 0.2s ease;
     }
+
+    &:hover::before {
+      transform: scale(1.2);
+    }
+
+    &:active::before {
+      transform: scale(0.8);
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
 }
 

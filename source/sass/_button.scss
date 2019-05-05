@@ -12,4 +12,15 @@
   color: $grey;
   text-transform: uppercase;
   cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: #ffffff;
+
+    background-color: $grey;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

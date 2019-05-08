@@ -11,8 +11,8 @@
     <header class="page-header">
       <a class="logo  page-header__logo">
         <picture>
-          <source srcset="img/logo-desktop.svg" media="(min-width: 1150px)">
-          <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
           <img class="logo__img" src="img/logo-mobile.svg" alt="Логотип магазина вязаных игрушек Mishka" width="86" height="35">
         </picture>
       </a>
@@ -38,6 +38,7 @@
 
       <nav class="main-nav  main-nav--closed  main-nav--nojs">
         <button class="main-nav__toggle">Открыть меню</button>
+
         <ul class="main-nav__list">
           <li class="main-nav__list-item">
             <a class="main-nav__link  main-nav__link--search" href="#">
@@ -95,10 +96,12 @@
           <h2 class="top-product__title">Вязаные корзинки</h2>
           <span class="top-product__tag">Товар недели</span>
         </div>
+
         <div class="top-product__info-wrapper">
           <div class="top-product__info">
             <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трёх размерах.</p>
           </div>
+
           <table class="top-product__features-table">
             <tr>
               <th class="top-product__feature">Цвет:</th>
@@ -113,6 +116,7 @@
               <td class="top-product__feature-value">15 см</td>
             </tr>
           </table>
+
           <picture>
             <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
@@ -122,6 +126,7 @@
             <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
             <img class="top-product__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Товар недели - вязаные корзинки" width="260" height="315">
           </picture>
+
           <span class="top-product__price">Цена: 990 руб.</span>
           <a class="top-product__button  button" href="#">Заказать</a>
         </div>
@@ -129,29 +134,30 @@
 
       <section class="about-us">
         <h2 class="about-us__title">Коротко о нас:</h2>
+
         <ul class="about-us__list">
-          <li class="about-us__item about-us__item--ecology">
+          <li class="about-us__item  about-us__item--ecology">
             <span class="about-us__text  about-us__text--ecology">Экологически чистые материалы</span>
           </li>
-          <li class="about-us__item about-us__item--style">
+          <li class="about-us__item  about-us__item--style">
             <span class="about-us__text  about-us__text--style">Скандинавский стиль по российской цене</span>
           </li>
-          <li class="about-us__item about-us__item--likes">
+          <li class="about-us__item  about-us__item--likes">
             <span class="about-us__text  about-us__text--likes">Увеличивает лайки на фотографиях</span>
           </li>
-          <li class="about-us__item about-us__item--handmade">
+          <li class="about-us__item  about-us__item--handmade">
             <span class="about-us__text  about-us__text--handmade">Связано вручную с любовью и умилением</span>
           </li>
-          <li class="about-us__item about-us__item--home">
+          <li class="about-us__item  about-us__item--home">
             <span class="about-us__text  about-us__text--home">Поддержка отечественного производителя</span>
           </li>
-          <li class="about-us__item about-us__item--gift">
+          <li class="about-us__item  about-us__item--gift">
             <span class="about-us__text  about-us__text--gift">Поставляется в подарочной упаковке</span>
           </li>
         </ul>
       </section>
 
-      <section class="review  slider">
+      <section class="review">
         <h2 class="review__title">Отзывы</h2>
 
         <ul class="review__list">
@@ -170,6 +176,7 @@
           <button class="review__button  review__button--prev" type="button">Назад</button>
           <button class="review__button  review__button--next" type="button">Вперёд</button>
         </div>
+
         <button class="button review__button-write" type="button">Написать</button>
       </section>
 
@@ -186,11 +193,11 @@
             <p class="contacts__text">
               <span class="contacts__left">адрес:</span>
               <span class="contacts__right">
-            г. Санкт-Петербург,<br>
-            ул. Большая
-            Конюшенная,<br>
-            д. 19/8, офис 101
-          </span>
+                г. Санкт-Петербург,<br>
+                ул. Большая
+                Конюшенная,<br>
+                д. 19/8, офис 101
+              </span>
             </p>
           </div>
         </div>
@@ -222,7 +229,7 @@
         <ul class="social__list">
           <li class="social__item  social__item--insta">
             <a class="social__link" href="#">
-              Инстаграмм
+              Инстаграм
               <svg class="social__insta" xmlns="http://www.w3.org/2000/svg" width="21.769" height="21.334">
                 <use xlink:href="img/sprite.svg#icon-insta"></use>
               </svg>
@@ -261,6 +268,7 @@
       <form class="modal-basket" action="https://echo.htmlacademy.ru">
         <h2 class="modal-basket__title">Добавить в корзину</h2>
         <span class="modal-basket__size">Выберите размер:</span>
+
         <div class="modal-basket__list">
           <label class="modal-basket__label">
             <input class="modal-basket__input" type="radio" name="product-size" checked>
@@ -275,6 +283,7 @@
             <span class="modal-basket__size-tag">L</span>
           </label>
         </div>
+
         <button class="modal-basket__add  button">Добавить</button>
       </form>
     </section>

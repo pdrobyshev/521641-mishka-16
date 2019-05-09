@@ -31,10 +31,8 @@
 
   transition: border-color 0.2s ease;
 
-  &:hover {
-    border-color: $color-secondary--light;
-  }
-
+  &:hover,
+  &:focus,
   &:active {
     border-color: $color-secondary--light;
   }
@@ -47,13 +45,15 @@
     font-size: $font-size-m + 2;
     line-height: 0.95em;
 
-    &:hover + .field-text__tel-img {
+    &:hover + .field-text__tel-img,
+    &:focus + .field-text__tel-img {
       opacity: 1;
       fill: $color-secondary--light;
     }
   }
 
-  &--email:hover + .field-text__email-img {
+  &--email:hover + .field-text__email-img,
+  &--email:focus + .field-text__email-img {
     opacity: 1;
     fill: $color-secondary--light;
   }

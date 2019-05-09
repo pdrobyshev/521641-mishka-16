@@ -27,7 +27,8 @@
       transition: transform 0.2s ease;
     }
 
-    &:hover::before {
+    &:hover::before,
+    &:focus::before {
       transform: scale(1.2);
     }
 
@@ -36,7 +37,8 @@
     }
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
   }
 
@@ -55,6 +57,7 @@
   font-weight: 700;
   font-size: $font-size-m;
   line-height: 1.411em;
+  word-break: break-word;
 
   &::before {
     position: absolute;

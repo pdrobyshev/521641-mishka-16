@@ -50,7 +50,8 @@
 
   transition: border-color 0.2s ease;
 
-  &:hover {
+  &:hover,
+  &:focus {
     border-color: rgba(68, 68, 68, 0.3);
   }
 

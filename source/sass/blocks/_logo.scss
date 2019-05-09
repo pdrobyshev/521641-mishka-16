@@ -25,7 +25,8 @@
       flex-shrink: 0;
     }
 
-    &:hover .logo__img {
+    &:hover .logo__img,
+    &:focus .logo__img {
       opacity: 0.6;
     }
 
@@ -47,7 +48,8 @@
 
     transition: fill 0.2s ease, opacity 0.2s ease;
 
-    &:hover {
+    &:hover,
+    &:focus {
       fill: $color-secondary--darken;
     }
 
@@ -59,7 +61,7 @@
 
 @media (min-width: $screen-md) {
   .logo {
-    margin-right: 100px;
+    margin-right: 101px;
   }
 
   .logo__img {

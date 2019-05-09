@@ -44,7 +44,8 @@
   line-height: 1.411em;
   color: $color-main;
 
-  &--search:hover .main-nav__search-img {
+  &--search:hover .main-nav__search-img,
+  &--search:focus .main-nav__search-img {
     fill: $color-secondary;
     opacity: 1;
     transition: all 0.2s ease;
@@ -54,7 +55,8 @@
     opacity: 0.3;
   }
 
-  &--cart:hover {
+  &--cart:hover,
+  &--cart:focus {
     color: rgba(0, 0, 0, 0.6);
     transition: all 0.2s ease;
 

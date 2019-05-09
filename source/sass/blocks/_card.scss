@@ -65,7 +65,8 @@
 
     transition: box-shadow 0.15s ease;
 
-    &:hover {
+    &:hover,
+    &:focus {
       box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
 
       .card__name {
@@ -131,6 +132,7 @@
   .card__price {
     padding-top: 23px;
     padding-left: 5px;
+    padding-right: 25px;
 
     font-size: $font-size-m;
     line-height: 1.41em;
@@ -150,8 +152,8 @@
   }
 
   .card__item-link {
-    height: 100%;
     flex-direction: column;
+    height: 100%;
   }
 
   .card__item-img {

@@ -36,7 +36,8 @@
     border: 2px solid $grey;
   }
 
-  &:hover::before {
+  &:hover::before,
+  &:focus::before {
     border-color: $color-secondary--light;
   }
 

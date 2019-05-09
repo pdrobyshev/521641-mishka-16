@@ -7,7 +7,8 @@
 
   transition: opacity 0.2s ease;
 
-  &:hover .copyright__htmlacademy {
+  &:hover .copyright__htmlacademy,
+  &:focus .copyright__htmlacademy {
     fill: $color-secondary--darken;
   }
 
@@ -26,7 +27,9 @@
 }
 
 .copyright__htmlacademy {
+  display: flex;
   flex-shrink: 0;
+  margin-top: 2px;
 
   fill: $color-secondary;
 
@@ -52,9 +55,5 @@
 @media (min-width: $screen-md) {
   .copyright__text {
     margin-top: 2px;
-  }
-
-  .copyright__htmlacademy {
-    margin-top: 10px;
   }
 }

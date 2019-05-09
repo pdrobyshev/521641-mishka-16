@@ -124,4 +124,4 @@ gulp.task("build", gulp.series(
   "copy-html"
 ));
 
-gulp.task("start", gulp.series("dev-build", "server"));
+gulp.task("start", gulp.series("build", "server"));

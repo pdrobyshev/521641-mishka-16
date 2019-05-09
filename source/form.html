@@ -61,9 +61,11 @@
     </header>
 
     <main class="page-main">
-      <h1 class="page-main__title  page-main__title--form">Вязание на заказ</h1>
+      <div class="page-main__title-wrapepr">
+        <h1 class="page-main__title  page-main__title--form">Вязание на заказ</h1>
 
-      <span class="page-main__shipping  page-main__shipping--form">Бесплатная доставка по России</span>
+        <span class="page-main__shipping  page-main__shipping--form">Бесплатная доставка по России</span>
+      </div>
 
       <p class="page-main__intro">
         Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
@@ -73,97 +75,109 @@
         <h2 class="visually-hidden">Форма заказа товара</h2>
 
         <form class="form" action="https://echo.htmlacademy.ru">
-          <fieldset class="form__fieldset  form__fieldset--type">
-            <legend class="form__legend">Тип</legend>
+          <div class="form-fieldset-wrapper">
+            <fieldset class="form__fieldset  form__fieldset--type">
+              <legend class="form__legend">Тип</legend>
 
-            <div class="field-radio-wrapper">
-              <label class="field-radio">
-                <input class="field-radio__input" type="radio" name="order-type" checked>
-                <span class="field-radio__text">Аксессуар для интерьера</span>
-              </label>
-              <label class="field-radio">
-                <input class="field-radio__input" type="radio" name="order-type">
-                <span class="field-radio__text">Детская игрушка</span>
-              </label>
-            </div>
-          </fieldset>
+              <div class="field-radio-wrapper">
+                <label class="field-radio">
+                  <input class="field-radio__input" type="radio" name="order-type" checked>
+                  <span class="field-radio__text">Аксессуар для интерьера</span>
+                </label>
+                <label class="field-radio">
+                  <input class="field-radio__input" type="radio" name="order-type">
+                  <span class="field-radio__text">Детская игрушка</span>
+                </label>
+              </div>
+            </fieldset>
+          </div>
 
-          <fieldset class="form__fieldset  form__fieldset--color">
-            <legend class="form__legend  form__legend--color">Цвет</legend>
+          <div class="form-fieldset-wrapper  form-fieldset-wrapper--color">
+            <fieldset class="form__fieldset  form__fieldset--color">
+              <legend class="form__legend  form__legend--color">Цвет</legend>
 
-            <div class="field-checkbox-wrapper">
-              <label class="field-checkbox">
-                <input class="field-checkbox__input" type="checkbox" name="order-color" checked>
-                <span class="field-checkbox__text">Белый</span>
-              </label>
-              <label class="field-checkbox">
-                <input class="field-checkbox__input" type="checkbox" name="order-color" checked>
-                <span class="field-checkbox__text">Серый</span>
-              </label>
-              <label class="field-checkbox">
-                <input class="field-checkbox__input" type="checkbox" name="order-color">
-                <span class="field-checkbox__text">«Тиффани»</span>
-              </label>
-              <label class="field-checkbox">
-                <input class="field-checkbox__input" type="checkbox" name="order-color">
-                <span class="field-checkbox__text">Чёрный</span>
-              </label>
-              <label class="field-checkbox">
-                <input class="field-checkbox__input" type="checkbox" name="order-color">
-                <span class="field-checkbox__text">Розовый</span>
-              </label>
-              <label class="field-checkbox">
-                <input class="field-checkbox__input" type="checkbox" name="order-color">
-                <span class="field-checkbox__text">Оранжевый</span>
-              </label>
-            </div>
-          </fieldset>
+              <div class="field-checkbox-wrapper">
+                <label class="field-checkbox">
+                  <input class="field-checkbox__input" type="checkbox" name="order-color" checked>
+                  <span class="field-checkbox__text">Белый</span>
+                </label>
+                <label class="field-checkbox">
+                  <input class="field-checkbox__input" type="checkbox" name="order-color" checked>
+                  <span class="field-checkbox__text">Серый</span>
+                </label>
+                <label class="field-checkbox">
+                  <input class="field-checkbox__input" type="checkbox" name="order-color">
+                  <span class="field-checkbox__text">«Тиффани»</span>
+                </label>
+                <label class="field-checkbox">
+                  <input class="field-checkbox__input" type="checkbox" name="order-color">
+                  <span class="field-checkbox__text">Чёрный</span>
+                </label>
+                <label class="field-checkbox">
+                  <input class="field-checkbox__input" type="checkbox" name="order-color">
+                  <span class="field-checkbox__text">Розовый</span>
+                </label>
+                <label class="field-checkbox">
+                  <input class="field-checkbox__input" type="checkbox" name="order-color">
+                  <span class="field-checkbox__text">Оранжевый</span>
+                </label>
+              </div>
+            </fieldset>
+          </div>
 
-          <fieldset class="form__fieldset  form__fieldset--name">
-            <legend class="form__legend  form__legend--name">ФИО</legend>
+          <div class="form-fieldset-wrapper">
+            <fieldset class="form__fieldset  form__fieldset--name">
+              <legend class="form__legend  form__legend--name">ФИО</legend>
 
-            <div class="field-text-wrapper">
+              <div class="field-text-wrapper">
+                <label class="field-text">
+                  <span class="field-text__name">Имя:</span>
+                  <input class="field-text__input" type="text" name="order-name" placeholder="Введите ваше имя*" required>
+                </label>
+                <label class="field-text  field-text--surname">
+                  <span class="field-text__name">Фамилия:</span>
+                  <input class="field-text__input  field-text__input--surname" type="text" name="order-surname" placeholder="Укажите фамилию*" required>
+                </label>
+                <label class="field-text  field-text--patronymic">
+                  <span class="field-text__name">Отчество:</span>
+                  <input class="field-text__input" type="text" name="order-patronymic" placeholder="Отчество, если желаете">
+                </label>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="form-fieldset-wrapper  form-fieldset-wrapper--color">
+            <fieldset class="form__fieldset  form__fieldset--tel">
               <label class="field-text">
-                <span class="field-text__name">Имя:</span>
-                <input class="field-text__input" type="text" name="order-name" placeholder="Введите ваше имя*" required>
+                <span class="field-text__label-text  field-text__label-text--tel">Тел</span>
+                <input class="field-text__input  field-text__input--tel" type="tel" name="order-tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                <svg class="field-text__tel-img" xmlns="http://www.w3.org/2000/svg" width="24.829" height="24.333">
+                  <use xlink:href="img/sprite.svg#icon-phone"></use>
+                </svg>
               </label>
-              <label class="field-text  field-text--surname">
-                <span class="field-text__name">Фамилия:</span>
-                <input class="field-text__input  field-text__input--surname" type="text" name="order-surname" placeholder="Укажите фамилию*" required>
+            </fieldset>
+          </div>
+
+          <div class="form-fieldset-wrapper  form-fieldset-wrapper--color">
+            <fieldset class="form__fieldset  form__fieldset--email">
+              <label class="field-text">
+                <span class="field-text__label-text  field-text__label-text--email">E-mail</span>
+                <input class="field-text__input  field-text__input--email" type="email" name="order-email" placeholder="Ваш Email*" required>
+                <svg class="field-text__email-img" xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+                  <use xlink:href="img/sprite.svg#icon-mail"></use>
+                </svg>
               </label>
-              <label class="field-text  field-text--patronymic">
-                <span class="field-text__name">Отчество:</span>
-                <input class="field-text__input" type="text" name="order-patronymic" placeholder="Отчество, если желаете">
+            </fieldset>
+          </div>
+
+          <div class="form-fieldset-wrapper">
+            <fieldset class="form__fieldset  form__fieldset--more">
+              <label class="field-text  field-text--more">
+                <span class="field-text__label-text  field-text__label-text--more">Доп</span>
+                <textarea class="field-text__input  field-text__input--textarea" name="order-additional" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </label>
-            </div>
-          </fieldset>
-
-          <fieldset class="form__fieldset  form__fieldset--tel">
-            <label class="field-text">
-              <span class="field-text__label-text  field-text__label-text--tel">Тел</span>
-              <input class="field-text__input  field-text__input--tel" type="tel" name="order-tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-              <svg class="field-text__tel-img" xmlns="http://www.w3.org/2000/svg" width="24.829" height="24.333">
-                <use xlink:href="img/sprite.svg#icon-phone"></use>
-              </svg>
-            </label>
-          </fieldset>
-
-          <fieldset class="form__fieldset  form__fieldset--email">
-            <label class="field-text">
-              <span class="field-text__label-text  field-text__label-text--email">E-mail</span>
-              <input class="field-text__input  field-text__input--email" type="email" name="order-email" placeholder="Ваш Email*" required>
-              <svg class="field-text__email-img" xmlns="http://www.w3.org/2000/svg" width="32" height="32">
-                <use xlink:href="img/sprite.svg#icon-mail"></use>
-              </svg>
-            </label>
-          </fieldset>
-
-          <fieldset class="form__fieldset  form__fieldset--more">
-            <label class="field-text  field-text--more">
-              <span class="field-text__label-text  field-text__label-text--more">Доп</span>
-              <textarea class="field-text__input  field-text__input--textarea" name="order-additional" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-            </label>
-          </fieldset>
+            </fieldset>
+          </div>
 
           <div class="form__button-wrapper">
             <p class="form__attention-text">*Поля обязательны для заполнения</p>
@@ -174,47 +188,49 @@
     </main>
 
     <footer class="page-footer">
-      <div class="social  page-footer__social">
-        <a class="logo  page-footer__logo" href="index.html">
-          <svg class="logo__footer-img" xmlns="http://www.w3.org/2000/svg" width="101.615" height="34.056">
-            <use xlink:href="img/sprite.svg#logo-footer"></use>
-          </svg>
-        </a>
-
-        <ul class="social__list">
-          <li class="social__item  social__item--insta">
-            <a class="social__link" href="#">
-              Инстаграм
-              <svg class="social__insta" xmlns="http://www.w3.org/2000/svg" width="21.769" height="21.334">
-                <use xlink:href="img/sprite.svg#icon-insta"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item  social__item--fb">
-            <a class="social__link" href="#">
-              Фейсбук
-              <svg class="social__fb" xmlns="http://www.w3.org/2000/svg" width="14.962" height="27.718">
-                <use xlink:href="img/sprite.svg#icon-fb"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item  social__item--twitter">
-            <a class="social__link" href="#">
-              Твиттер
-              <svg class="social__twitter" xmlns="http://www.w3.org/2000/svg" width="23.494" height="20.168">
-                <use xlink:href="img/sprite.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-
-        <div class="copyright">
-          <span class="copyright__text">Разработано</span>
-          <a class="copyright__htmlacademy" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09">
-              <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+      <div class="page-footer__inner-wrapper">
+        <div class="social  page-footer__social">
+          <a class="logo  page-footer__logo" href="index.html">
+            <svg class="logo__footer-img" xmlns="http://www.w3.org/2000/svg" width="101.615" height="34.056">
+              <use xlink:href="img/sprite.svg#logo-footer"></use>
             </svg>
           </a>
+
+          <ul class="social__list">
+            <li class="social__item  social__item--insta">
+              <a class="social__link" href="#">
+                Инстаграм
+                <svg class="social__insta" xmlns="http://www.w3.org/2000/svg" width="21.769" height="21.334">
+                  <use xlink:href="img/sprite.svg#icon-insta"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item  social__item--fb">
+              <a class="social__link" href="#">
+                Фейсбук
+                <svg class="social__fb" xmlns="http://www.w3.org/2000/svg" width="14.962" height="27.718">
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item  social__item--twitter">
+              <a class="social__link" href="#">
+                Твиттер
+                <svg class="social__twitter" xmlns="http://www.w3.org/2000/svg" width="23.494" height="20.168">
+                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <div class="copyright">
+            <span class="copyright__text">Разработано</span>
+            <a class="copyright__htmlacademy" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09">
+                <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </footer>

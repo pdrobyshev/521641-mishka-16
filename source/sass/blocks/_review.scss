@@ -208,8 +208,6 @@
     padding-right: 50px;
     padding-bottom: 118px;
 
-    background-size: 100% 21px;
-
     &::before {
       top: 7px;
       left: 50px;
@@ -220,7 +218,7 @@
 
       height: 21px;
 
-      background-size: 100% 21px;
+      background-size: calc(100% - 100px) 21px;
     }
   }
 

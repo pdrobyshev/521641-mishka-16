@@ -204,7 +204,7 @@
     &::before {
       height: 21px;
 
-      background-size: 100% 21px;
+      background-size: calc(100% - 100px) 21px;
     }
   }
 

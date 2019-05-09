@@ -1,19 +1,20 @@
 .page-main {
   display: block;
-  max-width: 320px;
-  margin: 0 auto;
+}
+
+.page-main__title-wrapepr {
+  background-color: $grey-lightest;
 }
 
 .page-main__title {
-  margin: 0;
+  max-width: 320px;
+  margin: 0 auto;
   padding: 76px 41px;
   padding-top: 71px;
 
   font-weight: 700;
   font-size: $font-size-xl;
   line-height: 1.1em;
-
-  background: $grey-lightest;
 
   &--form {
     padding-left: 36px;
@@ -26,24 +27,36 @@
 }
 
 .page-main__intro {
-  margin: 30px;
+  max-width: 320px;
+  margin: 0 auto;
   margin-top: 23px;
   margin-bottom: 24px;
+  padding: 0 30px;
 
   line-height: 1.85em;
   color: $grey;
 }
 
 .page-main__cards {
+  max-width: 320px;
+  margin: 0 auto;
   padding: 30px;
   padding-bottom: 0;
 }
 
+.page-main__video {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
 @media (min-width: $screen-sm) {
-  .page-main {
+  .page-main__title-wrapepr {
     position: relative;
 
-    max-width: $screen-sm;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 101% 23px;
   }
 
   .page-main__shipping {
@@ -69,22 +82,20 @@
   }
 
   .page-main__title {
+    max-width: $screen-sm;
     padding-top: 95px;
     padding-bottom: 92px;
 
     font-size: 43px;
     line-height: 1.16em;
     text-align: center;
-
-    background-image: url("../img/bg-zigzag-fill.svg");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 101% 23px;
   }
 
   .page-main__intro {
-    margin: 61px 51px;
+    max-width: $screen-sm;
+    margin: 61px auto;
     margin-bottom: 75px;
+    padding: 0 50px;
 
     font-size: $font-size-m;
     line-height: 1.76em;
@@ -94,15 +105,21 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    max-width: $screen-sm;
     padding: 68px 50px;
     padding-left: 51px;
     padding-bottom: 0;
   }
+
+  .page-main__video {
+    max-width: $screen-sm;
+  }
 }
 
 @media (min-width: $screen-md) {
-  .page-main {
-    max-width: $screen-md;
+  .page-main__title-wrapepr {
+    background-size: 100% 34px;
+    background-position: 0 101%;
   }
 
   .page-main__shipping--catalog {
@@ -111,27 +128,32 @@
   }
 
   .page-main__title {
+    max-width: $screen-md;
     padding-top: 92px;
     padding-bottom: 121px;
 
     font-size: 53px;
     line-height: 1.08em;
-
-    background-size: 100% 34px;
-    background-position: 0 101%;
   }
 
   .page-main__cards {
     flex-direction: row;
     justify-content: space-between;
+    max-width: $screen-md;
     padding-top: 110px;
     padding-left: 49px;
   }
 
   .page-main__intro {
-    max-width: 672px;
+    max-width: $screen-md;
     margin-top: 104px;
     margin-left: 225px;
     margin-bottom: 40px;
+    padding: 0;
+    padding-right: 200px;
+  }
+
+  .page-main__video {
+    max-width: $screen-md;
   }
 }

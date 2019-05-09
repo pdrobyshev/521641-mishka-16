@@ -1,0 +1,25 @@
+.form-fieldset-wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: $screen-sm) {
+  .form-fieldset-wrapper {
+    max-width: $screen-sm;
+
+    &--color {
+      max-width: none;
+      background-color: $grey-lightest;
+    }
+  }
+}
+
+@media (min-width: $screen-md) {
+  .form-fieldset-wrapper {
+    max-width: $screen-md;
+
+    &--color {
+      max-width: none;
+    }
+  }
+}

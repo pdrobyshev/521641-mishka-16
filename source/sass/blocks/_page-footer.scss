@@ -1,8 +1,10 @@
 .page-footer {
+  background-color: $grey-lightest;
+}
+
+.page-footer__inner-wrapper {
   max-width: 320px;
   margin: 0 auto;
-
-  background-color: $grey-lightest;
 }
 
 .page-footer__logo {
@@ -10,7 +12,7 @@
 }
 
 @media (min-width: $screen-sm) {
-  .page-footer {
+  .page-footer__inner-wrapper {
     max-width: $screen-sm;
     padding: 50px;
     padding-top: 52px;
@@ -24,7 +26,7 @@
 }
 
 @media (min-width: $screen-md) {
-  .page-footer {
+  .page-footer__inner-wrapper {
     max-width: $screen-md;
     padding-bottom: 60px;
     padding-top: 51px;

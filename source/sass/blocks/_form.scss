@@ -6,7 +6,6 @@
 .form__fieldset {
   position: relative;
 
-  margin: 0;
   padding: 0;
 
   border: none;
@@ -74,6 +73,11 @@
   }
 }
 
+.form__button-wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
 .form__attention-text {
   margin: 0;
   margin-bottom: 32px;
@@ -101,7 +105,8 @@
     &--color,
     &--tel,
     &--email {
-      background-color: $grey-lightest;
+      max-width: $screen-sm;
+      margin: 0 auto;
     }
 
     &--type {
@@ -164,6 +169,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: $screen-sm;
     margin-bottom: 50px;
     padding: 0 50px;
   }
@@ -189,6 +195,7 @@
 
 @media (min-width: $screen-md) {
   .form__fieldset {
+    max-width: $screen-md;
     padding: 0 112px;
 
     &--type {
@@ -200,7 +207,7 @@
     &--color {
       margin-bottom: 50px;
       padding-top: 64px;
-      padding-bottom: 5px;
+      padding-bottom: 11px;
       padding-left: 0;
     }
 
@@ -239,6 +246,7 @@
   }
 
   .form__button-wrapper {
+    max-width: $screen-md;
     padding-left: 226px;
     padding-right: 226px;
   }

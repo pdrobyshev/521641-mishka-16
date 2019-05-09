@@ -54,7 +54,7 @@
     position: relative;
 
     background-image: url("../img/bg-zigzag-fill.svg");
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-position: bottom;
     background-size: 101% 23px;
   }
@@ -118,7 +118,7 @@
 
 @media (min-width: $screen-md) {
   .page-main__title-wrapepr {
-    background-size: 100% 34px;
+    background-size: auto;
     background-position: 0 101%;
   }
 
@@ -144,13 +144,17 @@
     padding-left: 49px;
   }
 
-  .page-main__intro {
+  .page-main__intro-wrapper {
     max-width: $screen-md;
+    margin: 0 auto;
+  }
+
+  .page-main__intro {
     margin-top: 104px;
     margin-left: 225px;
     margin-bottom: 40px;
     padding: 0;
-    padding-right: 200px;
+    padding-right: 50px;
   }
 
   .page-main__video {
